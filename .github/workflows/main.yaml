@@ -1,0 +1,37 @@
+on:
+  push:
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  vault_updater_job:
+    runs-on: ubuntu-latest
+    name: A job to update all vaults' amounts.
+    steps:
+      - name: Vault Updater
+        id: vault-updater
+        uses: heavy-duty/drill-vault-updater-action@v1.0.49
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          rpc-endpoint: ${{ secrets.RPC_ENDPOINT }}
+          program-id: ${{ secrets.PROGRAM_ID }}
+          github-repository: ${{ github.repository }}
+          cluster: ${{ secrets.CLUSTER }}
+      - name: Get Vault Updater Result
+        run: echo "The result was ${{ steps.vault-updater.result }}"
+  board_cleaner_job:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    name: A job to clean all claimed bounties.
+    steps:
+      - name: Board Cleaner
+        id: board-cleaner
+        uses: heavy-duty/drill-board-cleaner-action@v1.0.5
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          rpc-endpoint: ${{ secrets.RPC_ENDPOINT }}
+          program-id: ${{ secrets.PROGRAM_ID }}
+          github-repository: ${{ github.repository }}
+      - name: Get Board Cleaner Result
+        run: echo "The result was ${{ steps.board-cleaner.result }}"
