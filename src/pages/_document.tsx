@@ -1,25 +1,19 @@
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
+import { Head, Html, Main, NextScript } from 'next/document';
 
-class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx)
-
-    return initialProps
-  }
-
-  render() {
-    return (
-      <Html>
+const Document = () => (
+    <Html>
         <Head>
-        <link rel="shortcut icon" href="/favicon.ico"/>
+            <link rel="shortcut icon" href="/favicon.ico" />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap"
+                rel="stylesheet"
+            />
         </Head>
-        <body>
-          <Main />
-          <NextScript />
+        <body className="dark:bg-black">
+            <Main />
+            <NextScript />
         </body>
-      </Html>
-    );
-  }
-}
+    </Html>
+);
 
-export default MyDocument;
+export default Document;
