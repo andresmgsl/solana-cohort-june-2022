@@ -1,20 +1,16 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { HomeView } from "../views";
+import AboutSection from 'components/home-page/about-section';
+import ActionsSection from 'components/home-page/actions-section';
+import FaqSection from 'components/home-page/faq-section';
+import HeroSection from 'components/home-page/hero-section';
+import { NextPage } from 'next';
 
-const Home: NextPage = (props) => {
-  return (
-    <div>
-      <Head>
-        <title>Solana Scaffold</title>
-        <meta
-          name="description"
-          content="Solana Scaffold"
-        />
-      </Head>
-      <HomeView />
-    </div>
-  );
-};
+const Home: NextPage = () => (
+  <>
+    <HeroSection />
+    <AboutSection />
+    <FaqSection />
+    <ActionsSection />
+  </>
+);
 
 export default Home;
