@@ -50,7 +50,7 @@ const Card = ({
             <div
                 className={cn(
                     `h-[2rem] from-[#63f194]`,
-                    'card-shadonw absolute top-[calc(100%-0.5rem)] z-[-1] w-[calc(100%-(1rem/2)-2px)] bg-gradient-to-b',
+                    'card-shadow absolute top-[calc(100%-0.5rem)] z-[-1] w-[calc(100%-(1rem/2)-2px)] bg-gradient-to-b',
                 )}
             />
         )}
