@@ -4,9 +4,16 @@ import Image from 'next/image';
 const HeroSection = () => (
   <section
     title="hero"
-    className="flex h-screen w-screen items-center justify-center bg-black"
+    className="relative flex h-screen w-screen items-center justify-center bg-black"
   >
-    <div className="flex flex-col gap-8">
+    <div
+      className="absolute z-0 -left-3/4 w-screen h-screen"
+      style={{
+        background:
+          'radial-gradient(50% 50% at 50% 50%, rgb(106, 108, 253) 0%, rgba(0, 0, 0, 0) 100%)',
+      }}
+    ></div>
+    <div className="z-50 flex flex-col gap-8">
       <h1 className="text-6xl font-medium text-white">
         Bounties.
         <br />
@@ -21,13 +28,15 @@ const HeroSection = () => (
         <Button text="Start Exploring" variant="transparent" />
       </div>
     </div>
-    <div className="absolute w-1/2 -top-1/10">
-      <Image
-        className="z-0 w-screen sm:w-auto"
-        src="/hero.svg"
-        alt="hero background"
-        layout="fill"
-      />
+    <div
+      style={{
+        background:
+          'radial-gradient(45.5% 47.88% at 45% 50.47%, rgb(255, 0, 199) 0%, rgba(0, 0, 0, 0) 100%)',
+      }}
+      className="-top-1/5 absolute right-0 z-0 w-1/2"
+    >
+      <Image src="/hero.svg" alt="hero background" layout="fill" />
+      <img className="invisible" src="/hero.svg" alt="placeholder"></img>
     </div>
   </section>
 );
