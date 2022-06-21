@@ -22,7 +22,7 @@ const HeroSection = () => (
       className="z-0 w-screen sm:w-auto"
       src="/hero.svg"
       alt="hero background"
-      width="600px"
+      layout="fill"
     />
   </section>
 );
