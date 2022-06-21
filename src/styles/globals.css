@@ -4,21 +4,12 @@
 
 @layer components {
   .card > div:last-child {
-    z-index: -1;
-
-    width: calc(
-      100% - (1rem / 2) - 2px
-    ); /* Normalize width by the border-radius of the parent card-element. */
-
-    top: calc(
-      100% - 0.5rem
-    ); /* Negative spacing to tuck drop-shadow underneath main content. */
-
+     /* Trapezium shape. */
     clip-path: polygon(
       0% 0%,
       5% 100%,
       95% 100%,
       100% 0px
-    ); /* Trapezium shape. */
+    );
   }
 }

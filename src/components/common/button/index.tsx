@@ -3,23 +3,24 @@ import cn from 'utils';
 type ButtonProps = {
   type?: 'button' | 'submit' | 'reset';
   variant?: string;
+  text: string;
 };
 
 const variants = {
   black: 'border-transparent bg-black text-white',
-  green: 'border-transparent bg-green-400 text-black',
+  green: 'border-transparent bg-[#63f194] text-black',
   transparent: 'text-white',
 };
 
-const Button = ({ type = 'button', variant = 'black' }: ButtonProps) => (
+const Button = ({ type = 'button', variant = 'black', text: value }: ButtonProps) => (
   <button
     className={cn(
       variants[variant],
-      'flex h-fit w-fit items-center justify-center rounded-full border px-5 py-3 text-sm uppercase tracking-wide transition-all hover:-translate-y-2 hover:border-black hover:bg-white hover:text-black',
+      'flex h-fit w-fit items-center justify-center rounded-full border px-5 py-3 text-sm uppercase tracking-wide transition-all hover:-translate-y-1.5 hover:border-black hover:bg-white hover:text-black',
     )}
     type={type}
   >
-    Button Text
+    {value}
   </button>
 );
 
