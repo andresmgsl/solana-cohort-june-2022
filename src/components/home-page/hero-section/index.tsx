@@ -2,7 +2,7 @@ import Button from 'components/common/button';
 import Image from 'next/image';
 
 const HeroSection = () => (
-  <section title="hero" className="flex w-screen h-screen items-center justify-center bg-transparent">
+  <section title="hero" className="flex w-screen h-screen items-center justify-center bg-black">
     <div className="flex flex-col gap-8">
       <h1 className="text-6xl font-medium text-white">
         Bounties.
@@ -18,12 +18,12 @@ const HeroSection = () => (
         <Button text="Start Exploring" variant="transparent" />
       </div>
     </div>
-    <Image
+    {/* <Image
       className="z-0 w-screen sm:w-auto"
       src="/hero.svg"
       alt="hero background"
       layout="fill"
-    />
+    /> */}
   </section>
 );
 
