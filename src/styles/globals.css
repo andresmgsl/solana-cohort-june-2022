@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .card > div:last-child {
+  .card-shadow {
      /* Trapezium shape. */
     clip-path: polygon(
       0% 0%,
