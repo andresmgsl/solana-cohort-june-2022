@@ -35,7 +35,7 @@ const Card = ({ cardSize = '20rem', shadowSize, cardColor = '#63f194', headerTex
     
     {shadowSize && <div className={cn(
       `h-[2rem] from-[#63f194]`,
-      "card-shadow z-[-1] absolute top-[calc(100%-0.5rem)] w-[calc(100%-(1rem/2)-2px)] bg-gradient-to-b" 
+      "card-shadonw z-[-1] absolute top-[calc(100%-0.5rem)] w-[calc(100%-(1rem/2)-2px)] bg-gradient-to-b" 
     )} />}
   </div>
 );
