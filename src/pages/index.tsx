@@ -6,13 +6,13 @@ import StatsSection from 'components/home-page/stats-section';
 import { NextPage } from 'next';
 
 const Home: NextPage = () => (
-  <div className='bg-black'>
-    <HeroSection />
-    <StatsSection />
-    <AboutSection />
-    <FaqSection />
-    <ActionsSection />
-  </div>
+    <div className="bg-black">
+        <HeroSection />
+        <StatsSection />
+        <AboutSection />
+        <FaqSection />
+        <ActionsSection />
+    </div>
 );
 
 export default Home;
