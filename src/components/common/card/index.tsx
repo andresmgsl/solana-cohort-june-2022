@@ -9,22 +9,15 @@ type CardProps = {
   buttonText?: string;
 };
 
-const cardSizes = {
-  sm: '12rem',
-  md: '20rem',
-  lg: '35rem',
-  full: '100%',
-};
-
 const shadowSizes = {
   sm: '2rem',
   md: '3rem',
   lg: '4rem',
 };
 
-const Card = ({ cardSize = 'md', shadowSize = 'md', headerText, bodyText, buttonText }: CardProps) => (
+const Card = ({ cardSize = '20rem', shadowSize = 'md', headerText, bodyText, buttonText }: CardProps) => (
   <div className={cn(
-    `h-[${cardSize === 'full' ? cardSizes[cardSize] : (cardSizes[cardSize].replace('rem', '') + shadowSizes[shadowSize].replace('rem', '') + 'rem')}]`,
+    `h-[${cardSize}]`,
     "card relative flex flex-col items-center w-fit max-w-full"
   )}>
     <div className="flex flex-col justify-between gap-10 h-full rounded-2xl bg-[#63f194] px-10 py-11">
