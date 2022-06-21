@@ -5,12 +5,12 @@ import HeroSection from 'components/home-page/hero-section';
 import { NextPage } from 'next';
 
 const Home: NextPage = () => (
-  <>
+  <div className='bg-black'>
     <HeroSection />
     <AboutSection />
     <FaqSection />
     <ActionsSection />
-  </>
+  </div>
 );
 
 export default Home;
