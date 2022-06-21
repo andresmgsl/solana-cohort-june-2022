@@ -3,7 +3,7 @@ const Footer = () => (
     {/* draw a thin grey line */ }
     <div className="w-full h-[1.5px] bg-gray-600" />
     <div className="w-full p-7 rounded-xl bg-white text-black"> 
-      <p> Footer </p> 
+      <p className="text-right text-sm font-light uppercase"> solana.com </p> 
     </div>
     
   </footer>

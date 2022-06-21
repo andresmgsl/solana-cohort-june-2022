@@ -1,7 +1,7 @@
 import Card from "components/common/card";
 
 const ActionsSection = () => (
-  <section title="actions">
+  <section title="actions" className="px-4 sm:px-8 md:gap-32 md:px-16 lg:px-32 xl:px-48">
     <div className="flex flex-col gap-5 w-full md:flex-row">
       <Card 
         cardSize="40rem"

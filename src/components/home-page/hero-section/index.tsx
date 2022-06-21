@@ -2,7 +2,7 @@ import Button from 'components/common/button';
 
 const HeroSection = () => (
   <section title="hero">
-    <div className="title flex h-64 items-center justify-center bg-neutral-800">
+    <div className="flex w-screen h-screen items-center justify-center bg-transparent">
       <h1 className="text-lg text-white">Bounties.</h1>
       <h1 className="text-lg text-white">Do you have what it takes?</h1>
     </div>
