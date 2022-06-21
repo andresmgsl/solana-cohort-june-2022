@@ -2,25 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@layer components {
+  .card > div:last-child {
+    z-index: -1;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+    width: calc(
+      100% - (1rem / 2) - 2px
+    ); /* Normalize width by the border-radius of the parent card-element. */
 
-* {
-  box-sizing: border-box;
-}
+    top: calc(
+      100% - 0.5rem
+    ); /* Negative spacing to tuck drop-shadow underneath main content. */
 
-/* example: override wallet button style */
-.wallet-adapter-button:not([disabled]):hover {
-  background-color: #707070;
+    clip-path: polygon(
+      0% 0%,
+      5% 100%,
+      95% 100%,
+      100% 0px
+    ); /* Trapezium shape. */
+  }
 }
-
