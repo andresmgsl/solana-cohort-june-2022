@@ -7,6 +7,7 @@ const AboutSection = () => (
         headerText='What are Bounties?'
         bodyText='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed adipiscing volutpat tincidunt amet vulputate porta est.'
         buttonText='Learn More'
+        shadowSize='md'
       />
     </div>
   </section>
