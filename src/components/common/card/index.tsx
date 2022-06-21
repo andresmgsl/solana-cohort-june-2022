@@ -21,6 +21,7 @@ const Card = ({ cardSize = '20rem', shadowSize, cardColor = '#63f194', headerTex
     `h-[${cardSize}]`,
     "card relative flex flex-col items-center w-fit max-w-full"
   )}>
+    
     <div className={cn(
       `bg-[${cardColor}]`,
       "flex flex-col justify-between gap-10 h-full rounded-2xl px-10 py-11"
@@ -31,8 +32,9 @@ const Card = ({ cardSize = '20rem', shadowSize, cardColor = '#63f194', headerTex
       </div>
       {buttonText && <Button text={buttonText} />}
     </div>
+    
     {shadowSize && <div className={cn(
-      `h-[2rem] md:h-[${shadowSizes[shadowSize]}] from-[#63f194]`,
+      `h-[2rem] from-[#63f194]`,
       "card-shadow z-[-1] absolute top-[calc(100%-0.5rem)] w-[calc(100%-(1rem/2)-2px)] bg-gradient-to-b" 
     )} />}
   </div>
