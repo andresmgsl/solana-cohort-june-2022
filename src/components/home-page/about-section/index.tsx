@@ -2,9 +2,9 @@ import Card from 'components/common/card';
 const AboutSection = () => (
     <section
         title="about"
-        className=" flex bg-black px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48"
+        className=" flex mt-36 md:mt-0 bg-black px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48"
     >
-        <div className="order-2 -ml-52 opacity-75 bg-blend-overlay md:w-1/2">
+        <div className="order-2 -mt-36 ml-7 md:-ml-52 md:mt-0 opacity-75 bg-blend-overlay w-3/4 md:w-1/2 absolute md:relative">
             <img src="/back.webp" alt="" />
         </div>
 
