@@ -7,7 +7,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
         ariaControls: 'accordion-collapse-body-1',
         children: (
             <p className="mb-2 text-[#999999]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. d sed
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
         ),
@@ -21,11 +21,11 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
         children: (
             <>
                 <p className="mb-2 text-[#999999]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. d
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
                 </p>
                 <p className="mb-2 text-[#999999]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. d
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
                 </p>
             </>
@@ -39,8 +39,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
         ariaControls: 'accordion-collapse-body-3',
         children: (
             <p className="mb-2 text-[#999999]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. d sed
-                adipiscing volutpat tincidunt amet vulputate porta est.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
         ),
         dataAccordionTarget: '#accordion-collapse-body-3',
@@ -52,7 +51,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
         ariaControls: 'accordion-collapse-body-4',
         children: (
             <p className="mb-2 text-[#999999]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. d sed
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
         ),
