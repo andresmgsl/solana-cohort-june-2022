@@ -5,9 +5,13 @@
     "extends": [
         "eslint:recommended",
         "next/core-web-vitals",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
-    "plugins": ["react", "react-hooks"],
+    "globals": {
+        "JSX": true
+    },
+    "plugins": ["react", "react-hooks", "@typescript-eslint"],
     "rules": {
         "arrow-body-style": ["warn", "as-needed"],
         "arrow-parens": ["error", "as-needed"],
