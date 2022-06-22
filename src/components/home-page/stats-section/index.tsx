@@ -23,7 +23,7 @@ const StatsSection = () => (
         <StatItem
             backgroundColor="#F07546"
             bountyName="Bounties3"
-            bountyNumber="135"
+            bountyNumber="1000"
             borderBottom="true"
             borderRight="true"
             removeBorderRightMedium="false"

@@ -1,3 +1,4 @@
+import CountUp from 'react-countup';
 const StatItem = StatProps => (
     <div
         className={`bg-[${StatProps.backgroundColor}]  ${
@@ -17,7 +18,7 @@ const StatItem = StatProps => (
             {StatProps.bountyName}
         </span>
         <span className="text-[45px] font-medium">
-            {StatProps.bountyNumber}
+            <CountUp end={StatProps.bountyNumber} />
         </span>
     </div>
 );
