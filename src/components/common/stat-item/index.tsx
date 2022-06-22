@@ -1,7 +1,7 @@
 import CountUp from 'react-countup';
 const StatItem = StatProps => (
     <div
-        className={`bg-[${StatProps.backgroundColor}]  ${
+        className={`bg-[#F07546]  ${
             StatProps.borderBottom === 'true' ? 'border-b-2' : ''
         } ${StatProps.borderRight === 'true' ? 'md:border-r-2' : ''} ${
             StatProps.removeBorderRightMedium === 'true'
