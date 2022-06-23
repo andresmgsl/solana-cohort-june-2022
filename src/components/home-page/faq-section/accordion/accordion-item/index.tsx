@@ -30,11 +30,11 @@ const AccordionItem = ({
     };
 
     return (
-        <>
+        <div className="border border-x-0 border-b-0 border-white py-2 first:border-0 first:pt-0 last:pb-0">
             <h3 id={id}>
                 <button
                     type="button"
-                    className="flex w-full items-center justify-between border-[1.5px] border-x-0 border-b-0 border-[#666666] p-3 text-left font-medium text-gray-400 transition duration-300 ease-in-out hover:bg-zinc-900"
+                    className="my-2 flex w-full items-center justify-between px-0 text-left font-medium text-gray-400 transition duration-300 ease-in-out"
                     data-accordion-target={dataAccordionTarget}
                     aria-expanded={expanded}
                     aria-controls={ariaControls}
@@ -66,11 +66,11 @@ const AccordionItem = ({
                 ref={contentSpace}
                 style={{ maxHeight: `${height}` }}
             >
-                <div className="border border-x-0 border-y-0 border-[#666666] p-2">
+                <div className="mb-1 border border-x-0 border-y-0 border-white py-0 px-0">
                     {children}
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

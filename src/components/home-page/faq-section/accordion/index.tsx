@@ -6,7 +6,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-1',
         children: (
-            <p className="mb-2 text-[#999999]">
+            <p className="text-[#999999]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
@@ -20,11 +20,11 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
         ariaControls: 'accordion-collapse-body-2',
         children: (
             <>
-                <p className="mb-2 text-[#999999]">
+                <p className="text-[#999999]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
                 </p>
-                <p className="mb-2 text-[#999999]">
+                <p className="text-[#999999]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
                 </p>
@@ -38,7 +38,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-3',
         children: (
-            <p className="mb-2 text-[#999999]">
+            <p className="text-[#999999]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
         ),
@@ -50,7 +50,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-4',
         children: (
-            <p className="mb-2 text-[#999999]">
+            <p className="text-[#999999]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
