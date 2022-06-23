@@ -9,15 +9,15 @@ type CardProps = {
 
 const blurClasses = {
     true: 'border border-white bg-[#26262B]/75 backdrop-blur-lg backdrop-filter',
-    false: ''
+    false: '',
 };
 
-const Card = ({ className, children, blur="false" }: CardProps) => (
+const Card = ({ className, children, blur = 'false' }: CardProps) => (
     <div
         className={cn(
             className,
             blurClasses[blur],
-            'w-fit max-w-full items-center rounded-2xl px-10 py-11',
+            'w-fit max-w-full items-center rounded-2xl',
         )}
     >
         {children}
