@@ -34,7 +34,7 @@ const HeroSection = () => (
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
             <div className="flex gap-4">
-                <Button text="Fund Bounty" variant="green" />
+                <Button text="Fund Bounty" variant="orange" />
                 <Button text="Start Exploring" variant="transparent" />
             </div>
         </div>

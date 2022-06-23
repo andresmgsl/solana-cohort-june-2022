@@ -1,3 +1,4 @@
+import Button from 'components/common/button';
 import Card from 'components/common/card';
 const AboutSection = () => (
     <section
@@ -9,12 +10,17 @@ const AboutSection = () => (
         </div>
 
         <div className="order-1 my-auto flex h-auto flex-col">
-            <Card
-                headerText="What are Bounties?"
-                bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed adipiscing volutpat tincidunt amet vulputate porta est."
-                buttonText="Learn More"
-                shadowSize="md"
-            />
+            <Card blur="true">
+                <div className="flex flex-col justify-between gap-10">
+                    <div className="flex max-w-xl flex-col gap-5">
+                        <h2 className="text-4xl text-sol-orange font-medium md:text-6xl">
+                            What are Bounties?
+                        </h2>
+                        <p className="text-lg text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed adipiscing volutpat tincidunt amet vulputate porta est. </p>
+                    </div>
+                    <Button text="Learn More" variant="transparent" />
+                </div>
+            </Card>
         </div>
     </section>
 );
