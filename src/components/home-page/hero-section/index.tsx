@@ -4,7 +4,7 @@ import Image from 'next/image';
 const HeroSection = () => (
     <section
         title="hero"
-        className="relative flex h-screen w-screen flex-col items-center justify-center bg-black"
+        className="relative flex flex-col h-screen w-screen items-center justify-center sm:flex-row sm:justify-start bg-black"
     >
         <div
             className="absolute -left-3/4 z-0 h-screen w-screen"
@@ -23,7 +23,7 @@ const HeroSection = () => (
             <Image src="/hero.svg" alt="hero background" layout="fill" />
             <img className="invisible" src="/hero.svg" alt="placeholder"></img>
         </div>
-        <div className="relative -top-12 z-40 flex flex-col gap-8 px-5 text-left sm:top-0 sm:-left-12">
+        <div className="relative -top-[10%] z-40 flex flex-col gap-8 px-5 text-left sm:top-0 xl:ml-32">
             <h1 className="text-6xl font-medium text-white">
                 Bounties.
                 <br />
