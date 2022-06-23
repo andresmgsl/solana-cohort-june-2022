@@ -18,7 +18,7 @@ const AboutSection = () => (
                         </h2>
                         <p className="text-lg text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed adipiscing volutpat tincidunt amet vulputate porta est. </p>
                     </div>
-                    <Button text="Learn More" />
+                    <Button text="Learn More" variant="transparent" />
                 </div>
             </Card>
         </div>
