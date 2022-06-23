@@ -6,7 +6,7 @@ const Footer = () => (
         <div className="h-[1px] w-full bg-white" />
         <Card className="w-full rounded-xl p-7" blur="true">
             <p className="text-white font-light text-right text-sm uppercase">
-                Powered by <span className="text-[#d7753e] font-medium">Solana</span>
+                Powered by <span className="text-sol-orange font-medium">Solana</span>
             </p>
         </Card>
     </footer>
