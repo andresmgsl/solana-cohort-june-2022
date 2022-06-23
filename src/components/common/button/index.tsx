@@ -8,7 +8,7 @@ type ButtonProps = {
 
 const variants = {
     black: 'border-transparent bg-black text-white',
-    green: 'border-transparent bg-[#63f194] text-black',
+    orange: 'border-transparent bg-sol-orange text-black',
     transparent: 'text-white',
 };
 

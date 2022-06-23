@@ -23,7 +23,7 @@ const HeroSection = () => (
             <Image src="/hero.svg" alt="hero background" layout="fill" />
             <img className="invisible" src="/hero.svg" alt="placeholder"></img>
         </div>
-        <div className="relative -top-12 z-50 flex flex-col gap-8 px-5 text-left sm:top-0 sm:-left-12">
+        <div className="relative -top-12 z-40 flex flex-col gap-8 px-5 text-left sm:top-0 sm:-left-12">
             <h1 className="text-6xl font-medium text-white">
                 Bounties.
                 <br />
@@ -34,7 +34,7 @@ const HeroSection = () => (
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
             <div className="flex gap-4">
-                <Button text="Fund Bounty" variant="green" />
+                <Button text="Fund Bounty" variant="orange" />
                 <Button text="Start Exploring" variant="transparent" />
             </div>
         </div>

@@ -5,7 +5,6 @@ const StatsSection = () => (
         className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
     >
         <StatItem
-            backgroundColor="#F07546"
             bountyName="Bounties1"
             bountyNumber="135"
             borderBottom="true"
@@ -13,7 +12,6 @@ const StatsSection = () => (
             removeBorderRightMedium="false"
         />
         <StatItem
-            backgroundColor="#F07546"
             bountyName="Bounties2"
             bountyNumber="135"
             borderBottom="true"
@@ -21,7 +19,6 @@ const StatsSection = () => (
             removeBorderRightMedium="true"
         />
         <StatItem
-            backgroundColor="#F07546"
             bountyName="Bounties3"
             bountyNumber="1000"
             borderBottom="true"
@@ -29,7 +26,6 @@ const StatsSection = () => (
             removeBorderRightMedium="false"
         />
         <StatItem
-            backgroundColor="#F07546"
             bountyName="Bounties4"
             bountyNumber="135"
             borderBottom="false"
