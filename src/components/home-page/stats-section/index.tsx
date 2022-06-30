@@ -43,6 +43,7 @@ const StatsSection = () => (
                 removeBorderRightMedium,
             }) => (
                 <StatItem
+                    key={bountyName}
                     bountyName={bountyName}
                     bountyNumber={bountyNumber}
                     borderBottom={borderBottom}
