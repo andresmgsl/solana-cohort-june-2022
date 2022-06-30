@@ -1,17 +1,30 @@
 import cn from 'utils';
 
+/**
+ * Properties for an interactable button component.
+ */
 type ButtonProps = {
     type?: 'button' | 'submit' | 'reset';
     variant?: string;
     text: string;
 };
 
+/**
+ * Pre-defined styling, according to agreed-upon design-system.
+ */
 const variants = {
     black: 'border-transparent bg-black text-white',
     orange: 'border-transparent bg-sol-orange text-black',
     transparent: 'text-white',
 };
 
+/**
+ * Definition of an interactable button component.
+ * 
+ * @param type `type` Attribute of the `<button>` element.
+ * @param variant Variations relating to pre-defined styling of the element
+ * @param text Text to display in the button.
+ */
 const Button = ({
     type = 'button',
     variant = 'black',
