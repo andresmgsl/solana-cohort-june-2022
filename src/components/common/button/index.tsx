@@ -14,7 +14,7 @@ type ButtonProps = {
  */
 const variants = {
     black: 'border-transparent bg-black text-white',
-    orange: 'border-transparent bg-sol-orange text-black',
+    orange: 'border-transparent bg-primary text-black',
     transparent: 'text-white',
 };
 

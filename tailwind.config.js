@@ -9,9 +9,6 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'sol-orange': '#e37542',
-                'sol-red': '#e64b61',
-
                 // Primary
                 "primary": "#e37542",
                 "primary-focus": "#ffffff",
