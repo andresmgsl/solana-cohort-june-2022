@@ -1,7 +1,11 @@
 import cn from 'utils';
 
 /**
+ * Definition of a button's properties.
  * 
+ * @param type `type` Attribute of the `<button>` element.
+ * @param variant Variations relating to pre-defined styling of the element
+ * @param text Text to display in the button.
  */
 type ButtonProps = {
     type?: 'button' | 'submit' | 'reset';
@@ -10,7 +14,7 @@ type ButtonProps = {
 };
 
 /**
- * 
+ * Pre-defined styling, according to agreed-upon design-system.
  */
 const variants = {
     black: 'border-transparent bg-black text-white',
