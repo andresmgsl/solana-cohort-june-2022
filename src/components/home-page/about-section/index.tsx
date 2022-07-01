@@ -13,7 +13,7 @@ const AboutSection = () => (
             <Card blur="true" className="px-10 py-11">
                 <div className="flex flex-col justify-between gap-10">
                     <div className="flex max-w-xl flex-col gap-5">
-                        <h2 className="text-4xl font-medium text-sol-orange md:text-6xl">
+                        <h2 className="text-4xl font-medium text-primary md:text-6xl">
                             What are Bounties?
                         </h2>
                         <p className="text-lg text-white">

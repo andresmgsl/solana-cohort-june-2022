@@ -7,7 +7,7 @@ const Footer = () => (
         <Card className="w-full rounded-xl p-7" blur="true">
             <p className="text-right text-sm font-light uppercase text-white">
                 Powered by{' '}
-                <span className="font-medium text-sol-orange">Solana</span>
+                <span className="font-medium text-primary">Solana</span>
             </p>
         </Card>
     </footer>
