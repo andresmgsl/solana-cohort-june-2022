@@ -14,7 +14,7 @@ type CardProps = {
  * Pre-defined styling, according to agreed-upon design-system.
  */
 const blurClasses = {
-    true: 'border border-white bg-[#26262B]/75 backdrop-blur-lg backdrop-filter text-white',
+    true: 'border border-white bg-base/75 backdrop-blur-lg backdrop-filter text-white',
     false: '',
 };
 

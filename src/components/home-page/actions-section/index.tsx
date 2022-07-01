@@ -4,10 +4,10 @@ import Card from 'components/common/card';
 const ActionsSection = () => (
     <section
         title="actions"
-        className="w-full p-5 sm:p-8 md:px-16 lg:px-32 lg:py-16 xl:px-48 xl:py-20 bg-gradient-to-tr from-sol-orange to-sol-red"
+        className="w-full p-5 sm:p-8 md:px-16 lg:px-32 lg:py-16 xl:px-48 xl:py-20 bg-gradient-to-tr from-primary to-secondary"
     >
         <div className="flex w-full flex-col gap-5 md:flex-row">
-            <Card className="w-full bg-primary px-10 py-11">
+            <Card className="w-full p-12" blur="true">
                 <div className="flex h-full flex-col justify-between gap-10">
                     <div className="flex max-w-xl flex-col gap-4">
                         <h2 className="text-4xl font-medium md:text-6xl">
@@ -23,7 +23,7 @@ const ActionsSection = () => (
                     <Button text="Get Started" variant="outlined" />
                 </div>
             </Card>
-            <Card className="h-full w-full bg-secondary px-10 py-11">
+            <Card className="h-full w-full p-12" blur="true">
                 <div className="flex flex-col justify-between gap-10">
                     <div className="flex max-w-xl flex-col gap-4">
                         <h2 className="text-4xl font-medium md:text-6xl">
