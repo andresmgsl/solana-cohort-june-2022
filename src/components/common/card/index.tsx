@@ -33,7 +33,7 @@ const Card = ({ className, children, blur = 'false' }: CardProps) => (
         className={cn(
             className,
             blurClasses[blur],
-            'w-fit max-w-full items-center rounded-2xl',
+            'w-fit max-w-full items-center rounded-3xl',
         )}
     >
         {children}
