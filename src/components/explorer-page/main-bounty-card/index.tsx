@@ -1,5 +1,5 @@
 import Chip from 'components/common/chip';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { MdNavigateNext } from "react-icons/md";
 const BountyCard = CardProps => (
     <div className=" align-center mx-3 flex h-20 gap-3 rounded-lg border bg-base px-2 text-white">
         <div className="my-2 mr-2">
@@ -39,7 +39,7 @@ const BountyCard = CardProps => (
             </div>
         </div>
         <div className="my-auto">
-            <NavigateNextIcon />
+            <MdNavigateNext />
         </div>
     </div>
 );
