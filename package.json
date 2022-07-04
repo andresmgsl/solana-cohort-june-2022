@@ -10,6 +10,9 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@emotion/styled": "^11.9.3",
+        "@material-ui/icons": "^4.11.3",
+        "@mui/icons-material": "^5.8.4",
         "@solana/wallet-adapter-base": "^0.9.3",
         "@solana/wallet-adapter-react": "^0.15.3",
         "@solana/wallet-adapter-react-ui": "^0.9.5",
