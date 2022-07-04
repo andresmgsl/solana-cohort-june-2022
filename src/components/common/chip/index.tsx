@@ -17,7 +17,7 @@ type ChipProps = {
  * @param blur Whether or not to apply a blur-effect.
  */
 const Chip = ({ highlightValue, value }: ChipProps) => (
-    <div className='flex flex-row gap-1 w-fit px-2 py-1 items-center rounded-full text-sm uppercase bg-black/50'>
+    <div className='flex flex-row gap-1 w-fit px-2 py-1 items-center rounded-full text-xs uppercase bg-black/50'>
         {highlightValue && <p className="text-primary font-medium"> {highlightValue} </p>}
         {value && <p className="text-white/50"> {value} </p>}
     </div>
