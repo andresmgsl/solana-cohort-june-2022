@@ -7,17 +7,8 @@ import cn from 'utils';
 type CardProps = {
     className?: string;
     children?: React.ReactNode;
-    blur?: string;
+    blur?: boolean;
 };
-
-/**
- * Pre-defined styling, according to agreed-upon design-system.
- */
-const blurClasses = {
-    true: 'border border-white bg-base/75 backdrop-blur-lg backdrop-filter text-white',
-    false: '',
-};
-
 
 /**
  * Definition of a card component,the main purpose of 
@@ -28,11 +19,11 @@ const blurClasses = {
  * @param children Child elements to be rendered within the component.
  * @param blur Whether or not to apply a blur-effect.
  */
-const Card = ({ className, children, blur = 'false' }: CardProps) => (
+const Card = ({ className, children, blur = true }: CardProps) => (
     <div
         className={cn(
             className,
-            blurClasses[blur],
+            blur && 'border border-white bg-base/75 backdrop-blur-lg backdrop-filter text-white',
             'w-fit max-w-full items-center rounded-3xl',
         )}
     >

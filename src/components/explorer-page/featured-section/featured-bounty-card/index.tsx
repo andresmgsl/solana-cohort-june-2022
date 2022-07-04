@@ -2,7 +2,7 @@ import Card from "components/common/card";
 import Chip from "components/common/chip";
 
 const FeaturedBountyCard = () => (
-    <Card className="flex flex-row w-fit max-h-48 p-6" blur="true">
+    <Card className="flex flex-row w-fit max-h-48 p-6">
         <div className="flex flex-col justify-between w-fit h-full">
             <div className="flex flex-col">
                 <h2 className="text-3xl font-medium">

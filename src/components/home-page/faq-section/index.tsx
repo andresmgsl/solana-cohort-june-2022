@@ -16,7 +16,7 @@ const FaqSection = () => (
                     <img src="/back.webp" alt="" />
                 </div>
                 <div className="w-full md:relative md:-ml-36 md:h-3/4 md:w-2/3">
-                    <Card blur="true" className="p-4">
+                    <Card className="p-4">
                         <Accordion />
                     </Card>
                 </div>

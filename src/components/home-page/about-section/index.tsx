@@ -10,7 +10,7 @@ const AboutSection = () => (
         </div>
 
         <div className="order-1 my-auto flex h-auto flex-col">
-            <Card blur="true" className="px-10 py-11">
+            <Card className="px-10 py-11">
                 <div className="flex flex-col justify-between gap-10">
                     <div className="flex max-w-xl flex-col gap-5">
                         <h2 className="text-4xl font-medium text-primary md:text-6xl">
