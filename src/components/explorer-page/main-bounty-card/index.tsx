@@ -25,7 +25,11 @@ const BountyCard = CardProps => (
             </div>
             <div className="mt-3 flex max-h-5 flex-col gap-2">
                 <div className="flex">
-                    <Chip highlightValue="Jun 4" value="Placed" />
+                    <Chip
+                        highlightValue="Jun 4"
+                        value="Placed"
+                        reversed={true}
+                    />
                     <Chip highlightValue="4" value="Participants" />
                 </div>
                 <div className="flex">
