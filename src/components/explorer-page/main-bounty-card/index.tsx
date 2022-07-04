@@ -1,7 +1,7 @@
 import Chip from 'components/common/chip';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 const BountyCard = CardProps => (
-    <div className=" align-center mx-3 mt-20 flex h-20 gap-3 rounded-lg border bg-base px-2 text-white">
+    <div className=" align-center mx-3 flex h-20 gap-3 rounded-lg border bg-base px-2 text-white">
         <div className="my-2 mr-2">
             <img
                 className="aspect-square h-full rounded-md"
