@@ -14,7 +14,7 @@ type CardProps = {
  * Pre-defined styling, according to agreed-upon design-system.
  */
 const blurClasses = {
-    true: 'border border-white bg-[#26262B]/75 backdrop-blur-lg backdrop-filter',
+    true: 'border border-white bg-base/75 backdrop-blur-lg backdrop-filter text-white',
     false: '',
 };
 
@@ -33,7 +33,7 @@ const Card = ({ className, children, blur = 'false' }: CardProps) => (
         className={cn(
             className,
             blurClasses[blur],
-            'w-fit max-w-full items-center rounded-2xl',
+            'w-fit max-w-full items-center rounded-3xl',
         )}
     >
         {children}
