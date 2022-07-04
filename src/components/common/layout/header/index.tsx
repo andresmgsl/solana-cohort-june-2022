@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const Header = () => (
-    <header className="fixed top-0 z-50 flex h-16 w-full items-center bg-black/25 px-4 backdrop-blur-xl backdrop-filter">
+    <header className="sticky top-0 z-50 flex h-16 w-full items-center bg-black/25 px-4 backdrop-blur-xl backdrop-filter">
         <Image
             src="/logo.svg"
             alt="Solana Logo"
