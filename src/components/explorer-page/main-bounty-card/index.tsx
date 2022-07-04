@@ -5,20 +5,22 @@ const BountyCard = CardProps => (
         <div className="my-2 mr-2">
             <img
                 className="aspect-square h-full rounded-md"
-                src="/dummyImg.png"
+                src={CardProps.imageSource}
                 alt="Bounty Logo"
             />
         </div>
         <div className="align-center flex flex-grow justify-between">
             <div className="my-auto">
-                <h2 className="text-3xl  font-semibold">Bounty title</h2>
+                <h2 className="text-3xl  font-semibold">
+                    {CardProps.bountyTitle}
+                </h2>
             </div>
             <div className="my-auto ">
                 <p className="font-small uppercase text-base-content opacity-50">
                     Up to
                 </p>
                 <h2 className="text-2xl font-semibold text-base-content">
-                    $10,000,000
+                    {CardProps.bountyPrize}
                 </h2>
             </div>
             <div className="mt-3 flex max-h-5 flex-col gap-2">
@@ -32,7 +34,7 @@ const BountyCard = CardProps => (
                 </div>
             </div>
         </div>
-        <div className='my-auto'>
+        <div className="my-auto">
             <NavigateNextIcon />
         </div>
     </div>
