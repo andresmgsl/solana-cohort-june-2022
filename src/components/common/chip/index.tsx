@@ -1,9 +1,12 @@
+import cn from 'utils';
+
 /**
  * Properties for a card component.
  */
 type ChipProps = {
     highlightValue?: string;
     value?: string;
+    reversed?: boolean;
 };
 
 
@@ -16,8 +19,12 @@ type ChipProps = {
  * @param children Child elements to be rendered within the component.
  * @param blur Whether or not to apply a blur-effect.
  */
-const Chip = ({ highlightValue, value }: ChipProps) => (
-    <div className='flex flex-row gap-1 w-fit px-2 py-1 items-center rounded-full text-xs uppercase bg-black/50'>
+const Chip = ({ highlightValue, value, reversed }: ChipProps) => (
+    <div className={cn(
+            "flex flex-row gap-1 w-fit px-2 py-1 items-center rounded-full text-xs uppercase bg-black/50",
+            reversed && "flex-row-reverse",
+        )}
+    >
         {highlightValue && <p className="text-primary font-medium"> {highlightValue} </p>}
         {value && <p className="text-white/50"> {value} </p>}
     </div>

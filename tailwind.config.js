@@ -21,6 +21,9 @@ module.exports = {
                 base: '#26262B',
                 'base-content': '#ffffff',
             },
+            textColor: {
+                secondary: '#999999',
+            },
         },
         fontFamily: {
             sans: ['Rubik'],
