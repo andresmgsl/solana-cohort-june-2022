@@ -32,7 +32,7 @@ const BountyCard = ({ imageSource, bountyTitle, bountyPrize }: CardProps) => (
                 </h2>
             </div>
             <div className="mt-3 flex max-h-5 flex-col gap-2">
-                <div className="flex">
+                <div className="flex gap-2">
                     <Chip
                         highlightValue="Jun 4"
                         value="Placed"
@@ -40,7 +40,7 @@ const BountyCard = ({ imageSource, bountyTitle, bountyPrize }: CardProps) => (
                     />
                     <Chip highlightValue="4" value="Participants" />
                 </div>
-                <div className="flex">
+                <div className="flex gap-2">
                     <Chip value="Category" />
                     <Chip value="Github tag" />
                 </div>
