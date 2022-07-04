@@ -6,7 +6,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-1',
         children: (
-            <p className="text-[#999999]">
+            <p className="text-secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
@@ -20,11 +20,11 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
         ariaControls: 'accordion-collapse-body-2',
         children: (
             <>
-                <p className="text-[#999999]">
+                <p className="text-secondary">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
                 </p>
-                <p className="text-[#999999]">
+                <p className="text-secondary">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
                 </p>
@@ -38,7 +38,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-3',
         children: (
-            <p className="text-[#999999]">
+            <p className="text-secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
         ),
@@ -50,7 +50,7 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-4',
         children: (
-            <p className="text-[#999999]">
+            <p className="text-secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
             </p>
@@ -65,6 +65,12 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
 const Accordion = () => {
     const [accordionItems, setAccordionItems] = useState(initialAccordionItems);
 
+    /**
+     * Sets the `expanded` attribute to `true` of the selected Accordion
+     * element on user click.
+     *
+     * @param {string} id `id` of the Accordion element to expand
+     */
     const onItemExpand = (id: string) => {
         setAccordionItems(prevItems =>
             prevItems.map(item =>

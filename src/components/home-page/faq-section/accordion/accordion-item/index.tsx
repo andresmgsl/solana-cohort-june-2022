@@ -24,6 +24,11 @@ const AccordionItem = ({
     const [height, setHeight] = useState('0px');
     const contentSpace = useRef<HTMLDivElement>(null);
 
+    /**
+     * Updates the `maxHeight` value of the current Accordion item. If selected,
+     * `maxHeight` is incremented to the height of its content, otherwise it is
+     * set to 0px.
+     */
     const expand = () => {
         setHeight(expanded ? '0px' : `${contentSpace.current.scrollHeight}px`);
         onExpand(id);
