@@ -20,6 +20,7 @@ module.exports = {
                 neutral: '#1B1817',
                 base: '#26262B',
                 'base-content': '#ffffff',
+                
             },
             textColor: {
                 secondary: '#999999',
