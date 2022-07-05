@@ -5,7 +5,7 @@ function Headline() {
     return (
         <>
             <div className="align-center flex justify-evenly gap-4 text-center md:hidden">
-                <Carousel showArrows={false} showStatus={false}>
+                <Carousel showArrows={false} showStatus={false} infiniteLoop={true}>
                     <div className="mb-16">
                         <h1 className="w-full pb-6 text-3xl font-semibold text-white">
                             Headline
