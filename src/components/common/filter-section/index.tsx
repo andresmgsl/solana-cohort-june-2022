@@ -7,10 +7,7 @@ import {
 
 const FilterPart = () => (
     <div className=" px-4 md:px-16 lg:px-32 xl:px-48">
-        <p className="text-lg uppercase text-base-content">Browse</p>
-        <h2 className="py-2 pb-6 text-6xl font-medium text-base-content">
-            Open Bounties
-        </h2>
+
         <div className=" flex  gap-3  text-white">
             <div className="flex max-h-48  w-2/3 max-w-full   rounded-3xl border  bg-base/75 p-2 text-white  ">
                 <div className="flex w-full justify-between">
