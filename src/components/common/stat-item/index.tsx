@@ -1,7 +1,8 @@
 import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 const StatItem = StatProps => (
     <div
-        className={`bg-sol-orange  ${
+        className={`bg-primary  ${
             StatProps.borderBottom === 'true' ? 'border-b-2' : ''
         } ${StatProps.borderRight === 'true' ? 'md:border-r-2' : ''} ${
             StatProps.removeBorderRightMedium === 'true'
@@ -18,7 +19,13 @@ const StatItem = StatProps => (
             {StatProps.bountyName}
         </span>
         <span className="text-[45px] font-medium">
-            <CountUp end={StatProps.bountyNumber} />
+            <CountUp end={StatProps.bountyNumber}>
+                {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                    </VisibilitySensor>
+                )}
+            </CountUp>
         </span>
     </div>
 );
