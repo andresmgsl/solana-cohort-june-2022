@@ -2,24 +2,24 @@ import Button from 'components/common/button';
 import Image from 'next/image';
 import { cn } from 'utils';
 
-const height = 'h-[calc(100vh_-_theme(space.20)_-_theme(space.12))]';
+const height = 'h-[calc(100vh_-_theme(space.20))]';
 
-const HeroSection = () => (
+const HeroSection = () => {
+    return (
     <section
         title="hero"
         className="relative flex h-screen w-screen flex-col items-center justify-center bg-black sm:flex-row sm:justify-start"
     >
-        <div
+        {/* <div
             style={{
                 background:
                     'radial-gradient(45.5% 47.88% at 45% 50.47%, #F07546 0%, rgba(0, 0, 0, 0) 100%)',
             }}
-            className={`relative top-32 z-0 w-screen sm:absolute sm:top-0 sm:right-0 sm:${height} sm:w-1/2`}
+            className={`hidden md: relative top-32 z-0 hidden w-screen`}
         >
-            <img className="invisible" src="/hero.svg" alt="placeholder"></img>
-        </div>
-        <div className="relative -top-[10%] z-40 flex flex-col gap-20 px-5 text-left sm:top-0 xl:ml-32">
-            <h1 className="leading-snug text-6xl font-medium text-white">
+        </div> */}
+        <div className="relative z-40 flex w-full h-full flex-col items-center md:items-start justify-evenly text-left">
+            <h1 className="text-justify text-[38px] font-medium leading-snug sm:leading-normal text-white sm:text-6xl ">
                 <span style={{ color: '#F07546' }}>Bounties</span> are here.
                 <br />
                 Do you have what it takes?
@@ -62,6 +62,6 @@ const HeroSection = () => (
             </div>
         </div>
     </section>
-);
+)};
 
 export default HeroSection;
