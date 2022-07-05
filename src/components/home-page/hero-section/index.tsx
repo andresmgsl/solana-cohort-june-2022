@@ -4,10 +4,10 @@ import cn from 'utils';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Headline from './component/Headline';
 
-
 const height = 'h-[calc(100vh_-_theme(space.20))]';
 
-const HeroSection = () => (
+const HeroSection = () => {
+    return (
     <section
         title="hero"
         className={cn(
@@ -15,17 +15,16 @@ const HeroSection = () => (
             height,
         )}
     >
-        <div
+        {/* <div
             style={{
                 background:
                     'radial-gradient(45.5% 47.88% at 45% 50.47%, #F07546 0%, rgba(0, 0, 0, 0) 100%)',
             }}
-            className={`relative top-32 z-0 hidden w-screen sm:absolute sm:top-0 sm:right-0 sm:block sm:${height} sm:w-1/2`}
+            className={`hidden md: relative top-32 z-0 hidden w-screen`}
         >
-            <img className="invisible" src="/hero.svg" alt="placeholder"></img>
-        </div>
+        </div> */}
         <div className="relative z-40 flex w-full h-full flex-col items-center md:items-start justify-evenly text-left">
-            <h1 className="text-justify text-[38px] font-medium leading-snug text-white sm:text-6xl ">
+            <h1 className="text-justify text-[38px] font-medium leading-snug sm:leading-normal text-white sm:text-6xl ">
                 <span style={{ color: '#F07546' }}>Bounties</span> are here.
                 <br />
                 Do you have what it takes?
@@ -37,6 +36,6 @@ const HeroSection = () => (
             </div>
         </div>
     </section>
-);
+)};
 
 export default HeroSection;
