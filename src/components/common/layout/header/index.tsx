@@ -1,11 +1,11 @@
 import Button from 'components/common/button';
-import SearchBar from 'components/common/search-bar';
 // import Image from 'components/common/image';
 import Image from 'next/image';
 import Link from 'next/link';
+import SearchBar from 'components/common/search-bar';
 
 const Header = () => (
-    <header className="flex flex-row justify-between fixed top-0 z-50 w-full h-20 items-center bg-black/25 px-6 backdrop-blur-xl backdrop-filter">
+    <header className="sticky top-0 z-50 flex h-20 w-full flex-row items-center justify-between bg-black/25 px-6 backdrop-blur-xl backdrop-filter">
         <div className="flex gap-10">
             <Image
                 src="/logo.svg"
@@ -21,12 +21,12 @@ const Header = () => (
             </div>
         </div>
 
-        <div className="flex-row gap-5 h-fit hidden sm:flex">
+        <div className="hidden h-fit flex-row gap-5 sm:flex">
             <SearchBar />
 
             <div className="w-px bg-white" />
 
-            <div className="flex-row gap-3 hidden md:flex">
+            <div className="hidden flex-row gap-3 md:flex">
                 <Button text="Log in" variant="transparent" />
                 <Button text="Sign up" variant="orange" />
             </div>
