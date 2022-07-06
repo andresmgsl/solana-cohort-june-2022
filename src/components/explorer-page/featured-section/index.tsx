@@ -9,10 +9,48 @@ const FeaturedSection = () => (
         <h2 className="text-4xl font-medium text-white md:text-6xl">
             Popular Bounties
         </h2>
-        <div className="flex w-full snap-x flex-row gap-5 overflow-x-auto scroll-smooth">
-            <FeaturedBountyCard />
-            <FeaturedBountyCard />
-            <FeaturedBountyCard />
+        <div className="flex flex-row gap-5 w-full overflow-x-auto scroll-smooth">
+            {/* Create 4 FeaturedBountyCard components with 4 tags each */}
+            <FeaturedBountyCard
+                name="Bounty 1"
+                reward="10,000,000"
+                tags={[
+                    { highlightValue: '4', value: 'Hunters' },
+                    { highlightValue: '4', value: 'Funders' },
+                    { value: 'Category' },
+                    { value: 'GitHub tag' },
+                ]}
+            />
+            <FeaturedBountyCard
+                name="Bounty 2"
+                reward="10,000,000"
+                tags={[
+                    { highlightValue: '4', value: 'Hunters' },
+                    { highlightValue: '4', value: 'Funders' },
+                    { value: 'Category' },
+                    { value: 'GitHub tag' },
+                ]}
+            />
+            <FeaturedBountyCard
+                name="Bounty 3"
+                reward="10,000,000"
+                tags={[
+                    { highlightValue: '4', value: 'Hunters' },
+                    { highlightValue: '4', value: 'Funders' },
+                    { value: 'Category' },
+                    { value: 'GitHub tag' },
+                ]}
+            />
+            <FeaturedBountyCard
+                name="Bounty 4"
+                reward="10,000,000"
+                tags={[
+                    { highlightValue: '4', value: 'Hunters' },
+                    { highlightValue: '4', value: 'Funders' },
+                    { value: 'Category' },
+                    { value: 'GitHub tag' },
+                ]}
+            />
         </div>
     </section>
 );
