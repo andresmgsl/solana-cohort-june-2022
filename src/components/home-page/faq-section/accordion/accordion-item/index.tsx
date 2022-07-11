@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 
 import Text from 'components/common/text';
-import cn from 'utils';
+import { cn } from 'utils';
 
 export type AccordionItemProps = {
     ariaControls: string;
