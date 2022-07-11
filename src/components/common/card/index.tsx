@@ -24,7 +24,7 @@ const Card = ({ className, children, blur = true }: CardProps) => (
         className={cn(
             className,
             blur && 'border border-white bg-base/75 backdrop-blur-lg backdrop-filter text-white',
-            'items-center rounded-3xl', // w-fit max-w-full 
+            'rounded-3xl', // w-fit max-w-full 
         )}
     >
         {children}
