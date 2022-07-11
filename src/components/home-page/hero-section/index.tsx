@@ -1,6 +1,6 @@
 import Button from 'components/common/button';
 import Image from 'next/image';
-import cn from 'utils';
+import { cn } from 'utils';
 
 const height = 'h-[calc(100vh_-_theme(space.20)_-_theme(space.12))]';
 
