@@ -1,10 +1,9 @@
-import FilterPart from 'components/common/filter-section';
 import BountyCard from 'components/common/main-bounty-card';
+import FilterSection from 'components/common/filter-section';
 const OpenBounties = () => (
     <section className="flex flex-col gap-4">
         <div>
-            <FilterPart />
-           
+            <FilterSection />
         </div>
         <div className="flex flex-col gap-6">
             <BountyCard
