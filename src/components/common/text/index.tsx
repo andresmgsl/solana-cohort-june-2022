@@ -5,7 +5,7 @@ import cn from 'utils';
  * Properties for a card component.
  */
 type TextProps = {
-    variant: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'button' | 'label';
+    variant: 'hero' | 'big-heading' | 'heading' | 'sub-heading' | 'paragraph' | 'input' | 'label';
     className?: string;
     children?: React.ReactNode;
 };
@@ -14,15 +14,13 @@ type TextProps = {
  * Pre-defined styling, according to agreed-upon design-system.
  */
  const styling = {
-    h1: 'text-3xl font-bold',
-    h2: 'text-2xl font-bold',
-    h3: 'text-xl font-bold',
-    h4: 'text-lg font-bold',
-    h5: 'text-md font-bold',
-    h6: 'text-sm font-bold',
-    p: 'text-base',
-    button: 'text-base',
-    label: 'text-base'
+    hero: 'text-4xl font-medium leading-snug sm:leading-normal sm:text-6xl',
+    'big-heading': 'text-4xl font-medium md:text-6xl',
+    'heading': 'text-3xl font-medium',
+    'sub-heading': 'text-2xl font-medium',
+    paragraph: 'text-lg',
+    input: 'text-sm uppercase tracking-wide',
+    label: 'text-xs uppercase'
 };
 
 /**
