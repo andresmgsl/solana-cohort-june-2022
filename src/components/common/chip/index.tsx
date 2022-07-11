@@ -21,12 +21,15 @@ type ChipProps = {
  * @param blur Whether or not to apply a blur-effect.
  */
 const Chip = ({ highlightValue, value, reversed }: ChipProps) => (
-    <div className={cn(
-            "flex flex-row gap-1 w-fit px-2 py-1 items-center rounded-full bg-black/50",
-            reversed && "flex-row-reverse",
-        )}
+    <div className="w-fit px-2 py-1 rounded-full bg-black/50"
     >
-        <Text variant="label">
+        <Text 
+            variant="label" 
+            className={cn(
+                "flex flex-row gap-1",
+                reversed && "flex-row-reverse",
+            )
+        }>
             {highlightValue && <span className="text-primary font-medium"> {highlightValue} </span>}
             {value && <span className="text-white/50"> {value} </span>}
         </Text>
