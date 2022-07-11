@@ -5,7 +5,7 @@ import {
     MdSort,
 } from 'react-icons/md';
 
-const FilterPart = () => (
+const FilterSection = () => (
     <div>
         <div className="flex gap-3 text-white">
             <div className="flex max-h-48  w-2/3 max-w-full rounded-3xl border bg-base/75 p-2 text-white">
@@ -53,4 +53,4 @@ const FilterPart = () => (
     </div>
 );
 
-export default FilterPart;
+export default FilterSection;
