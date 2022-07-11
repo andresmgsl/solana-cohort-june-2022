@@ -13,7 +13,7 @@ type TextProps = {
 /**
  * Pre-defined styling, according to agreed-upon design-system.
  */
- const styling = {
+ const variants = {
     hero: 'text-4xl font-medium leading-snug sm:leading-normal sm:text-6xl',
     'big-heading': 'text-4xl font-medium md:text-6xl',
     'heading': 'text-3xl font-medium',
@@ -28,19 +28,19 @@ type TextProps = {
  * which is to neatly display information. Can be both 
  * interactive and static.
  * 
+ * @param variant Variations relating to pre-defined styling of the element.
  * @param className Custom classes to be applied to the element.
  * @param children Child elements to be rendered within the component.
- * @param blur Whether or not to apply a blur-effect.
  */
 const Text = ({ variant, className, children }: TextProps) => (
-    <div
+    <text
         className={cn(
             className,
-            styling[variant]
+            variants[variant]
         )}
     >
         {children}
-    </div>
+    </text>
 );
 
 export default Text;
