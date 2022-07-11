@@ -1,4 +1,4 @@
-import cn from 'utils';
+import { cn } from 'utils';
 
 /**
  * Properties for an interactable button component.
@@ -20,7 +20,7 @@ const variants = {
 
 /**
  * Definition of an interactable button component.
- * 
+ *
  * @param type `type` Attribute of the `<button>` element.
  * @param variant Variations relating to pre-defined styling of the element
  * @param text Text to display in the button.
