@@ -23,9 +23,8 @@ const Card = ({ className, children, blur = true }: CardProps) => (
     <div
         className={cn(
             className,
-            blur &&
-                'border border-white bg-base/75 text-white backdrop-blur-lg backdrop-filter',
-            'items-center rounded-3xl', // w-fit max-w-full
+            blur && 'border border-white bg-base/75 backdrop-blur-lg backdrop-filter text-white',
+            'rounded-3xl', // w-fit max-w-full 
         )}
     >
         {children}

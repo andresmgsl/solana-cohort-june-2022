@@ -13,45 +13,28 @@ const FeaturedSection = () => (
             Popular Bounties
         </Text>
         <div className="flex flex-row gap-5 w-full overflow-x-auto scroll-smooth">
-            {/* Create 4 FeaturedBountyCard components with 4 tags each */}
             <FeaturedBountyCard
-                name="Bounty 1"
-                reward="10,000,000"
+                name="Really long bounty name"
+                reward="300"
                 tags={[
-                    { highlightValue: '4', value: 'Hunters' },
-                    { highlightValue: '4', value: 'Funders' },
-                    { value: 'Category' },
-                    { value: 'GitHub tag' },
+                    { value: 'landing-page' },
+                    { value: 'enhancement' },
+                    { value: 'explorer-page' },
+                    { value: 'bug' },
+                    { value: 'explorer-page' },
+                    { value: 'explorer-page' },
+                    { value: 'explorer-page' },
                 ]}
             />
+
             <FeaturedBountyCard
-                name="Bounty 2"
+                name="Really long bounty name"
                 reward="10,000,000"
                 tags={[
-                    { highlightValue: '4', value: 'Hunters' },
-                    { highlightValue: '4', value: 'Funders' },
-                    { value: 'Category' },
-                    { value: 'GitHub tag' },
-                ]}
-            />
-            <FeaturedBountyCard
-                name="Bounty 3"
-                reward="10,000,000"
-                tags={[
-                    { highlightValue: '4', value: 'Hunters' },
-                    { highlightValue: '4', value: 'Funders' },
-                    { value: 'Category' },
-                    { value: 'GitHub tag' },
-                ]}
-            />
-            <FeaturedBountyCard
-                name="Bounty 4"
-                reward="10,000,000"
-                tags={[
-                    { highlightValue: '4', value: 'Hunters' },
-                    { highlightValue: '4', value: 'Funders' },
-                    { value: 'Category' },
-                    { value: 'GitHub tag' },
+                    { value: 'landing-page' },
+                    { value: 'bug' },
+                    { value: 'explorer-page' },
+                    { value: 'enhancement' }
                 ]}
             />
         </div>
