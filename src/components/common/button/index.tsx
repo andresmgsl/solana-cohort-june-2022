@@ -1,4 +1,5 @@
 import cn from 'utils';
+import Text from '../text';
 
 /**
  * Properties for an interactable button component.
@@ -14,7 +15,7 @@ type ButtonProps = {
  */
 const variants = {
     black: 'border-transparent bg-black text-white',
-    orange: 'border-transparent bg-primary text-black',
+    orange: 'border-transparent bg-primary text-black', // TODO: Change name of variant to `highlight`.
     transparent: 'text-white',
 };
 
@@ -37,7 +38,7 @@ const Button = ({
         )}
         type={type}
     >
-        {value}
+        {value && <Text variant="input">{value}</Text>}
     </button>
 );
 
