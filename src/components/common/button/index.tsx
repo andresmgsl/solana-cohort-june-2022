@@ -1,4 +1,5 @@
 import cn from 'utils';
+import Text from '../text';
 
 /**
  * Properties for an interactable button component.
@@ -14,7 +15,7 @@ type ButtonProps = {
  */
 const variants = {
     black: 'border-transparent bg-black text-white',
-    orange: 'border-transparent bg-primary text-black',
+    orange: 'border-transparent bg-primary text-black', // TODO: Change name of variant to `highlight`.
     transparent: 'text-white',
 };
 
@@ -33,11 +34,11 @@ const Button = ({
     <button
         className={cn(
             variants[variant],
-            'flex h-fit w-fit items-center justify-center rounded-full border px-5 py-3 text-sm uppercase tracking-wide transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:text-black active:translate-y-[0.05rem] active:scale-95',
+            'flex h-fit w-fit items-center justify-center rounded-full border px-5 py-3 transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:text-black active:translate-y-[0.05rem] active:scale-95',
         )}
         type={type}
     >
-        {value}
+        {value && <Text variant="input">{value}</Text>}
     </button>
 );
 

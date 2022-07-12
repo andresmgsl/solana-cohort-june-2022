@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { MdOutlineSettings } from 'react-icons/md';
 import Stars from './stars';
+import Text from 'components/common/text';
 import { useRouter } from 'next/router';
 
 const Hero = () => {
@@ -21,12 +22,12 @@ const Hero = () => {
                     />
                     <div className="flex flex-col gap-3 md:mt-6">
                         <div className="flex flex-row flex-wrap items-center gap-x-4 gap-y-2">
-                            <h2 className="text-3xl font-medium text-white">
+                            <Text className="text-white" variant="heading">
                                 John Doe
-                            </h2>
-                            <p className="text-sm uppercase tracking-wide text-primary">
+                            </Text>
+                            <Text className="text-primary" variant="label">
                                 @{username}
-                            </p>
+                            </Text>
                         </div>
                         <Stars rating={3} size="md" />
                     </div>

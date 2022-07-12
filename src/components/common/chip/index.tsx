@@ -1,4 +1,5 @@
 import cn from 'utils';
+import Text from '../text';
 
 /**
  * Properties for a card component.
@@ -21,12 +22,14 @@ type ChipProps = {
  */
 const Chip = ({ highlightValue, value, reversed }: ChipProps) => (
     <div className={cn(
-            "flex flex-row gap-1 w-fit px-2 py-1 items-center rounded-full text-xs uppercase bg-black/50",
+            "flex flex-row gap-1 w-fit px-2 py-1 items-center rounded-full bg-black/50",
             reversed && "flex-row-reverse",
         )}
     >
-        {highlightValue && <p className="text-primary font-medium"> {highlightValue} </p>}
-        {value && <p className="text-white/50"> {value} </p>}
+        <Text variant="label">
+            {highlightValue && <span className="text-primary font-medium"> {highlightValue} </span>}
+            {value && <span className="text-white/50"> {value} </span>}
+        </Text>
     </div>
 );
 

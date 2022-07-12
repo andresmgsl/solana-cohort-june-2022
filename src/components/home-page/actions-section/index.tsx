@@ -1,5 +1,6 @@
 import Button from 'components/common/button';
 import Card from 'components/common/card';
+import Text from 'components/common/text';
 
 const ActionsSection = () => (
     <section
@@ -10,15 +11,15 @@ const ActionsSection = () => (
             <Card className="w-full p-12">
                 <div className="flex h-full flex-col justify-between gap-10">
                     <div className="flex max-w-xl flex-col gap-4">
-                        <h2 className="text-4xl font-medium md:text-6xl">
+                        <Text variant="big-heading">
                             Fund a Bounty
-                        </h2>
-                        <p className="text-lg">
+                        </Text>
+                        <Text variant="paragraph">
                             {' '}
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Ad sed adipiscing volutpat tincidunt amet
                             vulputate porta est.{' '}
-                        </p>
+                        </Text>
                     </div>
                     <Button text="Get Started" variant="outlined" />
                 </div>
@@ -26,15 +27,15 @@ const ActionsSection = () => (
             <Card className="h-full w-full p-12">
                 <div className="flex flex-col justify-between gap-10">
                     <div className="flex max-w-xl flex-col gap-4">
-                        <h2 className="text-4xl font-medium md:text-6xl">
+                        <Text variant="big-heading">
                             Explore Open Bounties
-                        </h2>
-                        <p className="text-lg">
+                        </Text>
+                        <Text variant="paragraph">
                             {' '}
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Ad sed adipiscing volutpat tincidunt amet
                             vulputate porta est.{' '}
-                        </p>
+                        </Text>
                     </div>
                     <Button text="Start Exploring" variant="outlined" />
                 </div>
