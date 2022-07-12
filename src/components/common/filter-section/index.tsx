@@ -5,44 +5,40 @@ import {
     MdSort,
 } from 'react-icons/md';
 
-const FilterPart = () => (
-    <div>
-        <div className="flex gap-3 text-white">
-            <div className="flex max-h-48  w-2/3 max-w-full rounded-3xl border bg-base/75 p-2 text-white">
+const FilterSection = () => (
+    <>
+        <div className="flex flex-col gap-4 text-sm text-white md:flex-row md:gap-2">
+            <div className="flex max-h-40 grow rounded-full border bg-base/75 text-white">
                 <div className="flex w-full justify-between">
-                    <div className="flex w-1/2  justify-between">
-                        <div className="flex gap-1 pl-8">
-                            <MdSort className="my-auto" />
-                            <p className="uppercase text-base-content opacity-50 ">
+                    <div className="flex w-1/2 items-center justify-between border-r px-4">
+                        <div className="flex items-center gap-2 py-3">
+                            <MdSort className="h-4 w-4" />
+                            <p className="uppercase tracking-wide text-base-content opacity-50">
                                 Sort by
                             </p>
                         </div>
-                        <MdExpandMore className="my-auto" />
+                        <MdExpandMore className="h-4 w-4" />
                     </div>
-                    <div className="flex w-1/2  justify-between">
-                        <div className="flex gap-1 pl-8">
-                            <MdOutlineCategory className="my-auto" />
-                            <p className="uppercase text-base-content opacity-50">
+                    <div className="flex w-1/2  items-center justify-between px-4">
+                        <div className="flex items-center gap-2 py-3">
+                            <MdOutlineCategory className="h-4 w-4" />
+                            <p className="uppercase tracking-wide text-base-content opacity-50">
                                 Tags
                             </p>
                         </div>
-                        <MdExpandMore className="my-auto" />
+                        <MdExpandMore className="h-4 w-4" />
                     </div>
                 </div>
             </div>
-            <div className="flex max-h-48  w-1/3 max-w-full   rounded-3xl border  bg-base/75 p-2 text-white">
-                <div className="flex gap-2 pl-5">
-                    <MdOutlineSearch className="my-auto" />
-                    {/* <input
-                        id="search"
-                        type="text"
-                        placeholder="Search for bounties"
-                        className="uppercase  opacity-50 bg-base/75 "
-                    /> */}
-                    <p className="uppercase text-base-content opacity-50">
-                        Search for bounties
-                    </p>
+            <div className="relative">
+                <div className="pointer-events-none absolute inset-y-0 flex items-center pl-4">
+                    <MdOutlineSearch className="h-4 w-4" />
                 </div>
+                <input
+                    className="block w-full rounded-full border border-white bg-base/75 py-3 pl-10 pr-6 uppercase tracking-wide placeholder:overflow-visible placeholder:text-base-content placeholder:opacity-50 focus:border-orange-400 focus:outline-none focus:ring-1 focus:ring-orange-400"
+                    placeholder="Search for bounties"
+                    type="text"
+                />
             </div>
         </div>
         <div className="flex justify-between pt-4 text-base-content">
@@ -50,7 +46,7 @@ const FilterPart = () => (
             <p className="m-auto uppercase">Rewards</p>
             <p className="m-auto uppercase">Tags</p>
         </div>
-    </div>
+    </>
 );
 
-export default FilterPart;
+export default FilterSection;
