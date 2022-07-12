@@ -7,8 +7,10 @@ import StatsSection from 'components/home-page/stats-section';
 
 const Home: NextPage = () => (
     <>
-        <HeroSection />
-        <StatsSection />
+        <div>
+            <HeroSection />
+            <StatsSection />
+        </div>
         <AboutSection />
         <FaqSection />
         <ActionsSection />
