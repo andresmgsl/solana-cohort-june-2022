@@ -1,4 +1,4 @@
-import FeaturedBountyCard from './bounty-card';
+import FeaturedBountyCard from '../bounty-card';
 import Text from 'components/common/text';
 
 const FeaturedSection = () => (
