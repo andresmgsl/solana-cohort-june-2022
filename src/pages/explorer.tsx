@@ -1,6 +1,6 @@
 import FeaturedSection from 'components/explorer-page/featured-section';
 import { NextPage } from 'next';
-import OpenBounties from 'components/explorer-page/open-bounties-section';
+import OpenBountiesSection from 'components/explorer-page/open-bounties-section';
 
 const Explorer: NextPage = () => (
     <div className="flex flex-col gap-12">
@@ -13,7 +13,7 @@ const Explorer: NextPage = () => (
                 <h2 className="text-4xl font-medium text-white md:text-6xl">
                     Open Bounties
                 </h2>
-                <OpenBounties />
+                <OpenBountiesSection />
             </div>
         </div>
     </div>
