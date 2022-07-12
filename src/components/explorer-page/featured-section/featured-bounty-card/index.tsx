@@ -37,11 +37,11 @@ const FeaturedBountyCard = ({ name, reward, tags }: FeaturedCardProps) => (
                     {reward}
                 </Text>
             </div>
-            <div className="flex flex-col gap-1 w-full">
-                <Text variant="label" className="opacity-50">
+            <div className="flex flex-col items-end gap-1 w-full">
+                <Text variant="label" className="w-fit opacity-50">
                         Tags
                 </Text>
-                <div className="flex flex-row flex-wrap justify-start items-end gap-1.5 w-full">
+                <div className="flex flex-row flex-wrap justify-end items-end gap-1.5 w-full">
                     {tags.slice(0, max).map(({ value, highlightValue, reversed }) => (
                         <Chip
                             key={value}

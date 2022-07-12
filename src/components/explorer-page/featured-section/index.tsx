@@ -12,7 +12,7 @@ const FeaturedSection = () => (
         <Text variant="big-heading">
             Popular Bounties
         </Text>
-        <div className="flex flex-row gap-5 w-full overflow-x-auto scroll-smooth">
+        <div className="flex flex-row justify-start gap-5 w-full overflow-x-auto scroll-smooth">
             <FeaturedBountyCard
                 name="Really long bounty name"
                 reward="300"
