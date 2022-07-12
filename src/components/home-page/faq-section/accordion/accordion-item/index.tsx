@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 
+import Text from 'components/common/text';
 import cn from 'utils';
 
 export type AccordionItemProps = {
@@ -45,7 +46,12 @@ const AccordionItem = ({
                     aria-controls={ariaControls}
                     onClick={expand}
                 >
-                    <span className="font-medium text-white">{title}</span>
+                    <Text
+                        className="font-medium text-white"
+                        variant="paragraph"
+                    >
+                        {title}
+                    </Text>
                     <svg
                         data-accordion-icon
                         className={cn(

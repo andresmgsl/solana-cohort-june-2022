@@ -1,15 +1,16 @@
 import AccordionItem, { AccordionItemProps } from './accordion-item';
 
+import Text from 'components/common/text';
 import { useState } from 'react';
 
 const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-1',
         children: (
-            <p className="text-secondary">
+            <Text className="text-secondary" variant="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
-            </p>
+            </Text>
         ),
         dataAccordionTarget: '#accordion-collapse-body-1',
         expanded: false,
@@ -20,14 +21,14 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
         ariaControls: 'accordion-collapse-body-2',
         children: (
             <>
-                <p className="text-secondary">
+                <Text className="text-secondary" variant="paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
-                </p>
-                <p className="text-secondary">
+                </Text>
+                <Text className="text-secondary" variant="paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad
                     sed adipiscing volutpat tincidunt amet vulputate porta est.
-                </p>
+                </Text>
             </>
         ),
         dataAccordionTarget: '#accordion-collapse-body-2',
@@ -38,9 +39,9 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-3',
         children: (
-            <p className="text-secondary">
+            <Text className="text-secondary" variant="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+            </Text>
         ),
         dataAccordionTarget: '#accordion-collapse-body-3',
         expanded: false,
@@ -50,10 +51,10 @@ const initialAccordionItems: Omit<AccordionItemProps, 'onExpand'>[] = [
     {
         ariaControls: 'accordion-collapse-body-4',
         children: (
-            <p className="text-secondary">
+            <Text className="text-secondary" variant="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ad sed
                 adipiscing volutpat tincidunt amet vulputate porta est.
-            </p>
+            </Text>
         ),
         dataAccordionTarget: '#accordion-collapse-body-4',
         expanded: false,
