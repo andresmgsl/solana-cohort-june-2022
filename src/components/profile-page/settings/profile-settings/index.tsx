@@ -54,26 +54,36 @@ const ProfileSettings = () => (
         </div>
         {/* form div */}
         <div className="flex flex-grow flex-col gap-12">
-            <div className="flex flex-col justify-between gap-10 lg:flex-row">
-                <p className="my-auto text-lg uppercase	text-primary-focus lg:w-1/2">
+            <div className="flex flex-col justify-between gap-10 xl:flex-row">
+                <p className="my-auto text-lg uppercase	text-primary-focus xl:w-1/2">
                     Full Name
                 </p>
-                <p className="my-auto rounded-xl border border-[#666666] p-2 px-4 text-lg text-primary-focus	 lg:w-1/2">
-                    John Doe
+                <p className="my-auto rounded-xl border border-[#666666] p-2 px-4 text-lg text-primary-focus	 xl:w-1/2">
+                    <input
+                        className=" w-full bg-black  tracking-wide placeholder:overflow-visible placeholder:text-base-content  focus:outline-none"
+                        placeholder="John Doe"
+                        type="text"
+                    />
                 </p>
             </div>
-            <div className="flex flex-col justify-between gap-10 lg:flex-row">
-                <p className="my-auto text-lg uppercase	text-primary-focus lg:w-1/2">
+            <div className="flex flex-col justify-between gap-10 2xl:flex-row">
+                <p className="my-auto w-1/3 text-lg uppercase	text-primary-focus 2xl:w-1/2">
                     GitHub url
                 </p>
-                <p className="my-auto flex rounded-xl border border-[#666666] text-lg  text-primary-focus	 lg:w-1/2">
-                    <div className="border-r border-[#666666] p-2 px-4">
+                <p className="my-auto flex rounded-xl border border-[#666666] text-lg  text-primary-focus	 2xl:w-1/2">
+                    <div className="my-auto border-r  border-[#666666] p-2 px-4">
                         https://github.com/
                     </div>
-                    <div className="my-auto px-4">UserName</div>
+                    <div className="my-auto px-4">
+                        <input
+                            className=" w-full bg-black tracking-wide placeholder:overflow-visible placeholder:text-base-content focus:outline-none"
+                            placeholder="UserName"
+                            type="text"
+                        />
+                    </div>
                 </p>
             </div>
-            <div className="flex flex-col gap-5 lg:flex-row">
+            <div className="flex flex-col gap-5 xl:flex-row">
                 <div className="my-auto w-1/2">
                     <p className="my-auto  text-lg	uppercase text-primary-focus">
                         Avatar

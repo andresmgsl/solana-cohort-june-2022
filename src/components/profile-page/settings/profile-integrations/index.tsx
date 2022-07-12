@@ -5,7 +5,11 @@ const ProfileIntergrations = () => (
                 Full Name
             </p>
             <p className="my-auto rounded-xl border border-[#666666] p-2 px-4 text-lg text-primary-focus	 lg:w-1/2">
-                John Doe
+                <input
+                    className=" w-full bg-black  tracking-wide placeholder:overflow-visible placeholder:text-base-content  focus:outline-none"
+                    placeholder="John Doe"
+                    type="text"
+                />
             </p>
         </div>
         <div className="flex flex-col justify-between gap-10 lg:flex-row">
@@ -16,7 +20,13 @@ const ProfileIntergrations = () => (
                 <div className="border-r border-[#666666] p-2 px-4">
                     https://github.com/
                 </div>
-                <div className="my-auto px-4">UserName</div>
+                <div className="my-auto px-4">
+                    <input
+                        className=" w-full bg-black tracking-wide placeholder:overflow-visible placeholder:text-base-content focus:outline-none"
+                        placeholder="UserName"
+                        type="text"
+                    />
+                </div>
             </p>
         </div>
         <div className="flex flex-col gap-5 lg:flex-row">
