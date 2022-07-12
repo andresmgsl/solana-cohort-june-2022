@@ -4,6 +4,7 @@ import cn from 'utils';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Headline from './component/Headline';
 
+
 const height = 'h-[calc(100vh_-_theme(space.20))]';
 
 const HeroSection = () => {
