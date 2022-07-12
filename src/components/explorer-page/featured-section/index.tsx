@@ -25,6 +25,7 @@ const FeaturedSection = () => (
                     { value: 'explorer-page' },
                     { value: 'explorer-page' },
                 ]}
+                responsive={false}
             />
 
             <FeaturedBountyCard
@@ -36,6 +37,7 @@ const FeaturedSection = () => (
                     { value: 'explorer-page' },
                     { value: 'enhancement' }
                 ]}
+                responsive={false}
             />
         </div>
     </section>

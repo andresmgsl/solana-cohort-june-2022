@@ -1,6 +1,7 @@
 import Card from "components/common/card";
 import Chip from "components/common/chip";
 import Text from "components/common/text";
+import cn from "utils";
 
 const max = 5;
 
@@ -15,22 +16,43 @@ const max = 5;
         value?: string;
         reversed?: boolean;
     }>;
+    responsive?: boolean;
 };
 
-const FeaturedBountyCard = ({ name, reward, tags }: FeaturedCardProps) => (
-    <Card className="flex flex-col justify-between gap-5 items-start flex-shrink-0 w-98 h-fit p-6">
-        <div className="flex flex-row gap-3 items-center max-w-full">
+const FeaturedBountyCard = ({ name, reward, tags, responsive = true }: FeaturedCardProps) => (
+    <Card 
+        className={cn(
+            "flex flex-col justify-between items-start gap-5 flex-shrink-0 w-98 h-fit p-6",
+            responsive && "!w-full 2lg:flex-row 2lg:items-center"
+        )}>
+        <div className="flex flex-row gap-3 items-center w-full max-w-full">
             <div className="h-16 w-16 aspect-square bg-white rounded-lg" />
             <div className="flex flex-col overflow-hidden">
                 <Chip value="placed" highlightValue="11 Jul" reversed={true} /> {/* TODO: Add prop to make date customizable. */}
-                <Text variant="heading" className="w-full overflow-hidden text-ellipsis whitespace-nowrap">
+                <Text 
+                    variant="heading" 
+                    className={cn(
+                        "w-full overflow-hidden text-ellipsis whitespace-nowrap inline",
+                        responsive && "2lg:hidden"
+                    )}>
+                    {name}
+                </Text>
+                <Text 
+                    variant="sub-heading" 
+                    className={cn("w-full overflow-hidden text-ellipsis whitespace-nowrap hidden",
+                        responsive && "2lg:inline"
+                    )}>
                     {name}
                 </Text>
             </div>
         </div>
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row items-center gap-5 w-full">
             <div className="flex flex-col gap-1 w-40 h-full overflow-hidden">
-                <Text variant="label" className="opacity-50">
+                <Text 
+                    variant="label" 
+                    className={cn("opacity-50 inline",
+                        responsive && "2lg:hidden"
+                    )}>
                         Reward · SOL
                 </Text>
                 <Text variant="heading" className="max-w-full text-primary overflow-hidden text-ellipsis whitespace-nowrap">
@@ -38,7 +60,11 @@ const FeaturedBountyCard = ({ name, reward, tags }: FeaturedCardProps) => (
                 </Text>
             </div>
             <div className="flex flex-col items-end gap-1 w-full">
-                <Text variant="label" className="w-fit opacity-50">
+                <Text 
+                    variant="label" 
+                    className={cn("w-fit pacity-50 inline",
+                        responsive && "2lg:hidden"
+                    )}>
                         Tags
                 </Text>
                 <div className="flex flex-row flex-wrap justify-end items-end gap-1.5 w-full">
