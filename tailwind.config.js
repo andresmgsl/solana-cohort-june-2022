@@ -25,6 +25,9 @@ module.exports = {
             textColor: {
                 secondary: '#999999',
             },
+            width: {
+                '98': '28rem',
+            },
         },
         fontFamily: {
             sans: ['Rubik'],

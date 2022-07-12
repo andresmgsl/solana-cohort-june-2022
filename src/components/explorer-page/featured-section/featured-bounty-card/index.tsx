@@ -1,22 +1,40 @@
 import Card from "components/common/card";
 import Chip from "components/common/chip";
 
-const FeaturedBountyCard = () => (
-    <Card className="flex flex-row gap-6 w-fit max-h-48 p-6" blur="true">
-        <div className="flex flex-col justify-between max-w-xs h-full">
+/**
+ * Properties for a "Featured Bounty" card component.
+ */
+ type FeaturedCardProps = {
+    name: string;
+    reward: string;
+    tags: Array<{
+        highlightValue?: string;
+        value?: string;
+        reversed?: boolean;
+    }>;
+};
+
+const FeaturedBountyCard = ({ name, reward, tags }: FeaturedCardProps) => (
+    <Card className="flex flex-row justify-between flex-shrink-0 w-98 h-52 p-6">
+        <div className="flex flex-col justify-between w-full h-full">
             <div className="flex flex-col whitespace-nowrap">
                 <h2 className="text-3xl text-ellipsis font-medium text-white">
-                    Bounty name
+                    {name}
                 </h2>
                 <h2 className="text-2xl font-medium text-primary">
-                    $10,000,000
+                    ${reward}
                 </h2>
             </div>
             <div className="flex flex-row flex-wrap justify-start items-end gap-1.5 w-full">
-                <Chip highlightValue="4" value="Hunters" />
-                <Chip highlightValue="4" value="Funders" />
-                <Chip value="Category" />
-                <Chip value="GitHub Tag" />
+                { /* Map each element in the tags array to a Chip component */}
+                {tags.map(({ value, highlightValue, reversed }) => (
+                    <Chip
+                        key={value}
+                        highlightValue={highlightValue}
+                        value={value}
+                        reversed={reversed}
+                    />
+                ))}
             </div>
         </div>
         <div className="h-full aspect-square bg-white rounded-lg" />
