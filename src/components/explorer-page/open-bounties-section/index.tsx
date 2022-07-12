@@ -1,8 +1,8 @@
 import Text from 'components/common/text';
 import FilterPart from 'components/common/filter-section';
-import FeaturedBountyCard from '../featured-section/featured-bounty-card';
+import BountyCard from '../featured-section/bounty-card';
 
-const OpenBounties = () => (
+const OpenBountiesSection = () => (
     <section className="flex flex-col gap-4">
         <FilterPart />
         <div className="px-6 flex-row justify-between gap-5 text-base-content hidden 2lg:flex">
@@ -13,7 +13,7 @@ const OpenBounties = () => (
             </div>
         </div>
         <div className="flex flex-col gap-6">
-            <FeaturedBountyCard
+            <BountyCard
                 name="Really long bounty name"
                 reward="300"
                 tags={[
@@ -26,7 +26,7 @@ const OpenBounties = () => (
                     { value: 'explorer-page' },
                 ]}
             />
-            <FeaturedBountyCard
+            <BountyCard
                 name="Really long bounty name"
                 reward="1,000,000"
                 tags={[
@@ -39,7 +39,7 @@ const OpenBounties = () => (
                     { value: 'explorer-page' },
                 ]}
             />
-            <FeaturedBountyCard
+            <BountyCard
                 name="Really long bounty name"
                 reward="3"
                 tags={[
@@ -52,7 +52,7 @@ const OpenBounties = () => (
                     { value: 'explorer-page' },
                 ]}
             />
-            <FeaturedBountyCard
+            <BountyCard
                 name="Really long bounty name"
                 reward="57"
                 tags={[
@@ -65,7 +65,7 @@ const OpenBounties = () => (
                     { value: 'explorer-page' },
                 ]}
             />
-            <FeaturedBountyCard
+            <BountyCard
                 name="Really long bounty name"
                 reward="300"
                 tags={[
@@ -82,4 +82,4 @@ const OpenBounties = () => (
     </section>
 );
 
-export default OpenBounties;
+export default OpenBountiesSection;
