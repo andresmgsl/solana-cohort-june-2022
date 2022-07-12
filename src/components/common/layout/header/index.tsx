@@ -5,7 +5,7 @@ import Link from 'next/link';
 import SearchBar from 'components/common/search-bar';
 
 const Header = () => (
-    <header className="sticky top-0 z-50 flex h-20 w-full flex-row items-center justify-between bg-black/25 px-6 backdrop-blur-xl backdrop-filter">
+    <header className="fixed top-0 z-50 flex h-20 w-full flex-row items-center justify-between bg-black/25 px-6 backdrop-blur-xl backdrop-filter">
         <div className="flex gap-10">
             <Image
                 src="/logo.svg"
