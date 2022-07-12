@@ -1,6 +1,6 @@
 import Text from 'components/common/text';
 import FilterPart from 'components/common/filter-section';
-import BountyCard from '../featured-section/bounty-card';
+import BountyCard from '../bounty-card';
 
 const OpenBountiesSection = () => (
     <section className="flex flex-col gap-4">
