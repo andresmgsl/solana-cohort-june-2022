@@ -25,7 +25,7 @@ const HeroSection = () => {
         >
         </div> */}
         <div className="relative z-40 flex w-full h-full flex-col items-center md:items-start justify-evenly text-left">
-            <h1 className="text-justify text-[38px] font-medium leading-snug sm:leading-normal text-white sm:text-6xl ">
+            <h1 className="text-[38px] font-medium leading-snug sm:leading-normal text-white sm:text-6xl ">
                 <span style={{ color: '#F07546' }}>Bounties</span> are here.
                 <br />
                 Do you have what it takes?
