@@ -5,7 +5,13 @@ import {
     MdSort,
 } from 'react-icons/md';
 
-const FilterSection = () => (
+import { ChangeEvent } from 'react';
+
+type FilterMenuProps = {
+    onSearchInputChange: (e: ChangeEvent<HTMLInputElement>) => void;
+};
+
+const FilterMenu = ({ onSearchInputChange }: FilterMenuProps) => (
     <>
         <div className="flex flex-col gap-4 text-sm text-white md:flex-row md:gap-2">
             <div className="flex max-h-40 grow rounded-full border bg-base/75 text-white">
@@ -35,14 +41,14 @@ const FilterSection = () => (
                     <MdOutlineSearch className="h-4 w-4" />
                 </div>
                 <input
-                    className="block w-full rounded-full border border-white bg-base/75 py-3 pl-10 pr-6 uppercase tracking-wide placeholder:overflow-visible placeholder:text-base-content placeholder:opacity-50 focus:border-orange-400 focus:outline-none focus:ring-1 focus:ring-orange-400"
+                    className="block w-full rounded-full border border-white bg-base/75 py-3 pl-10 pr-6 tracking-wide placeholder:overflow-visible placeholder:uppercase placeholder:text-base-content placeholder:opacity-50 focus:border-orange-400 focus:outline-none focus:ring-1 focus:ring-orange-400"
+                    onChange={onSearchInputChange}
                     placeholder="Search for bounties"
                     type="text"
                 />
             </div>
         </div>
-    </div>
     </>
 );
 
-export default FilterSection;
+export default FilterMenu;

@@ -1,6 +1,7 @@
+import BountyList from 'components/common/bounty-list';
 import Hero from 'components/profile-page/hero';
 import { NextPage } from 'next';
-import OpenBountiesSection from 'components/explorer-page/open-bounties-section';
+import { mockBounties } from 'mocks/bounties';
 
 const Profile: NextPage = () => (
     <div className="mt-8">
@@ -8,7 +9,7 @@ const Profile: NextPage = () => (
             <Hero />
             <div className="flex flex-col gap-7">
                 <h2 className="text-2xl font-medium text-white">My Bounties</h2>
-                <OpenBountiesSection />
+                <BountyList bounties={mockBounties} />
             </div>
         </div>
     </div>
