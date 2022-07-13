@@ -17,15 +17,11 @@ const filterBounties = ({ name }: Bounty, rawQuery: string) => {
 };
 
 /**
- * Formats number as USD currency string.
+ * Formats number as currency string.
  *
  * @param number Number to format.
  */
-const numberToUsd = (number: number) =>
-    Intl.NumberFormat('en-US', {
-        currency: 'USD',
-        minimumFractionDigits: 0,
-        style: 'currency',
-    }).format(number);
+const numberToCurrencyString = (number: number) =>
+    number.toLocaleString('en-US');
 
-export { cn, filterBounties, numberToUsd };
+export { cn, filterBounties, numberToCurrencyString };

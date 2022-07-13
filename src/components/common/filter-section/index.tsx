@@ -48,11 +48,6 @@ const FilterMenu = ({ onSearchInputChange }: FilterMenuProps) => (
                 />
             </div>
         </div>
-        <div className="flex justify-between pt-4 text-base-content">
-            <p className="m-auto uppercase">Basics</p>
-            <p className="m-auto uppercase">Rewards</p>
-            <p className="m-auto uppercase">Tags</p>
-        </div>
     </>
 );
 

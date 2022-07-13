@@ -1,9 +1,11 @@
+import Text from '../text';
 import { cn } from 'utils';
 
 /**
  * Properties for a card component.
  */
 type ChipProps = {
+    className?: string;
     highlightValue?: string;
     value?: string;
     reversed?: boolean;
@@ -18,17 +20,29 @@ type ChipProps = {
  * @param children Child elements to be rendered within the component.
  * @param blur Whether or not to apply a blur-effect.
  */
-const Chip = ({ highlightValue, value, reversed }: ChipProps) => (
-    <div
-        className={cn(
-            'flex w-fit flex-row items-center gap-1 rounded-full bg-black/50 px-2 py-1 text-xs uppercase',
-            reversed && 'flex-row-reverse',
-        )}
-    >
-        {highlightValue && (
-            <p className="font-medium text-primary"> {highlightValue} </p>
-        )}
-        {value && <p className="text-white/50"> {value} </p>}
+const Chip = ({ className, highlightValue, value, reversed }: ChipProps) => (
+    <div className="w-fit rounded-full bg-black/50 px-2 py-1">
+        <Text
+            variant="label"
+            className={cn(
+                className,
+                'flex flex-row gap-1',
+                reversed && 'flex-row-reverse',
+            )}
+        >
+            {highlightValue && (
+                <span className="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap font-medium text-primary">
+                    {' '}
+                    {highlightValue}{' '}
+                </span>
+            )}
+            {value && (
+                <span className="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap text-white/50">
+                    {' '}
+                    {value}{' '}
+                </span>
+            )}
+        </Text>
     </div>
 );
 

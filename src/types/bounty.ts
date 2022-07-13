@@ -1,5 +1,5 @@
 export type Bounty = {
     name: string;
-    prize: number;
-    thumbnail: string;
+    reward: number;
+    tags: { value: string }[];
 };
