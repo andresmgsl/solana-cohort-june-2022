@@ -27,6 +27,9 @@ module.exports = {
             width: {
                 '98': '28rem',
             },
+            screens: {
+                '2lg': '1111px',
+            },
         },
         fontFamily: {
             sans: ['Rubik'],
