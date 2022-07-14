@@ -5,7 +5,15 @@ import cn from 'utils';
  * Properties for a card component.
  */
 type TextProps = {
-    variant: 'hero' | 'big-heading' | 'heading' | 'sub-heading' | 'paragraph' | 'input' | 'label';
+    variant:
+        | 'hero'
+        | 'big-heading'
+        | 'heading'
+        | 'sub-heading'
+        | 'nav-heading'
+        | 'paragraph'
+        | 'input'
+        | 'label';
     className?: string;
     children?: React.ReactNode;
 };
@@ -18,6 +26,7 @@ type TextProps = {
     'big-heading': 'text-4xl font-medium md:text-6xl',
     'heading': 'text-3xl font-medium',
     'sub-heading': 'text-2xl font-medium',
+    'nav-heading': 'text-xl font-medium',
     paragraph: 'text-lg',
     input: 'text-sm uppercase tracking-wide',
     label: 'text-xs uppercase'

@@ -8,7 +8,9 @@ const SearchBar = () => (
     <Button variant="transparent">
         <MdOutlineSearch className="h-4 aspect-square" />
         {/* <Text variant="label" className="text-secondary"> Search </Text> */}
-        <Chip value="CTRL + K" />
+        <div> {/* className="hidden lg:flex" */}
+            <Chip value="CTRL + K" />
+        </div>
     </Button>
 );
 
