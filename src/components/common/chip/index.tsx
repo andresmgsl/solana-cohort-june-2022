@@ -27,12 +27,22 @@ const Chip = ({ className, highlightValue, value, reversed }: ChipProps) => (
             variant="label" 
             className={cn(
                 className,
-                "flex flex-row gap-1",
-                reversed && "flex-row-reverse"
-            )
-        }>
-            {highlightValue && <span className="text-primary font-medium min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"> {highlightValue} </span>}
-            {value && <span className="text-white/50 min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"> {value} </span>}
+                'flex flex-row gap-1',
+                reversed && 'flex-row-reverse',
+            )}
+        >
+            {highlightValue && (
+                <span className="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap font-medium text-primary">
+                    {' '}
+                    {highlightValue}{' '}
+                </span>
+            )}
+            {value && (
+                <span className="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap text-secondary">
+                    {' '}
+                    {value}{' '}
+                </span>
+            )}
         </Text>
     </div>
 );
