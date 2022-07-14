@@ -1,3 +1,4 @@
+import React, { Children } from 'react';
 import Text from '../text';
 import { cn } from 'utils';
 
@@ -7,7 +8,8 @@ import { cn } from 'utils';
 type ButtonProps = {
     type?: 'button' | 'submit' | 'reset';
     variant?: string;
-    text: string;
+    text?: string;
+    children?: React.ReactNode;
 };
 
 /**
@@ -30,15 +32,18 @@ const Button = ({
     type = 'button',
     variant = 'black',
     text: value,
+    children
 }: ButtonProps) => (
     <button
         className={cn(
             variants[variant],
-            'flex h-fit w-fit items-center justify-center rounded-full border px-5 py-3 transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:text-black active:translate-y-[0.05rem] active:scale-95',
+            'flex items-center justify-center gap-3 w-fit h-fit max-h-full rounded-full border transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:!text-black active:translate-y-[0.05rem] active:scale-95',
+            value || (React.Children.count(children) > 1) ? 'px-5 py-3' : 'p-3 aspect-square',
         )}
         type={type}
     >
         {value && <Text variant="input">{value}</Text>}
+        {children}
     </button>
 );
 

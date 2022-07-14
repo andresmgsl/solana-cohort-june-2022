@@ -20,6 +20,7 @@ module.exports = {
                 neutral: '#1B1817',
                 base: '#26262B',
                 'base-content': '#ffffff',
+                line: '#666666',
                 
             },
             textColor: {
@@ -27,6 +28,9 @@ module.exports = {
             },
             width: {
                 '98': '28rem',
+            },
+            borderWidth: {
+                '1.5': '1.5px',
             },
             screens: {
                 '2lg': '1111px',
