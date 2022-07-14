@@ -1,6 +1,6 @@
 import Chip from 'components/common/chip';
 import { MdNavigateNext } from 'react-icons/md';
-
+import Text from '../text';
 type CardProps = {
     // the source of the bounty logo
     imageSource?: string;
@@ -21,12 +21,17 @@ const BountyCard = ({ imageSource, bountyTitle, bountyPrize }: CardProps) => (
         </div>
         <div className="align-center flex flex-grow justify-between">
             <div className="my-auto">
-                <h2 className="text-3xl  font-semibold">{bountyTitle}</h2>
+                <Text variant="heading" className="  font-semibold">
+                    {bountyTitle}
+                </Text>
             </div>
             <div className="my-auto ">
-                <p className="font-small uppercase text-base-content opacity-50">
+                <Text
+                    variant="paragraph"
+                    className=" uppercase text-base-content opacity-50"
+                >
                     Up to
-                </p>
+                </Text>
                 <h2 className="text-2xl font-semibold text-base-content">
                     {bountyPrize}
                 </h2>
