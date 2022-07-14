@@ -37,7 +37,7 @@ const Chip = ({ className, highlightValue, value, reversed }: ChipProps) => (
                 </span>
             )}
             {value && (
-                <span className="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap text-white/50">
+                <span className="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap text-secondary">
                     {' '}
                     {value}{' '}
                 </span>

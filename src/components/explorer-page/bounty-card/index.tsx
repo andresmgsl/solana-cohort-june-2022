@@ -62,7 +62,7 @@ const FeaturedBountyCard = ({
                 <Text
                     variant="label"
                     className={cn(
-                        'inline opacity-50',
+                        'inline text-secondary',
                         responsive && '2lg:hidden',
                     )}
                 >
@@ -79,7 +79,7 @@ const FeaturedBountyCard = ({
                 <Text
                     variant="label"
                     className={cn(
-                        'pacity-50 inline w-fit',
+                        'text-secondary inline w-fit',
                         responsive && '2lg:hidden',
                     )}
                 >
