@@ -1,26 +1,32 @@
-import Card from "components/common/card";
-import Chip from "components/common/chip";
-import Text from "components/common/text";
-import cn from "utils";
+import { cn, numberToCurrencyString } from 'utils';
+
+import { Bounty } from 'types/bounty';
+import Card from 'components/common/card';
+import Chip from 'components/common/chip';
+import Text from 'components/common/text';
 
 const max = 5;
 
 /**
  * Properties for a "Featured Bounty" card component.
  */
- type FeaturedCardProps = {
-    name: string;
-    reward: string;
+type FeaturedCardProps = Omit<Bounty, 'tags'> & {
+    responsive?: boolean;
     tags: Array<{
         highlightValue?: string;
         value?: string;
         reversed?: boolean;
     }>;
-    responsive?: boolean;
 };
 
-const FeaturedBountyCard = ({ name, reward, tags, responsive = true }: FeaturedCardProps) => (
-    <Card 
+const FeaturedBountyCard = ({
+    createdAt,
+    name,
+    reward,
+    tags,
+    responsive = true,
+}: FeaturedCardProps) => (
+    <Card
         className={cn(
             "flex flex-col justify-between items-start gap-5 flex-shrink-0 w-98 h-fit p-6",
             responsive && "!w-full 2lg:flex-row 2lg:items-center"
@@ -28,9 +34,13 @@ const FeaturedBountyCard = ({ name, reward, tags, responsive = true }: FeaturedC
         <div className="flex flex-row gap-3 items-center w-full max-w-full">
             <div className="h-16 w-16 aspect-square bg-white rounded-lg" />
             <div className="flex flex-col overflow-hidden">
-                <Chip value="placed" highlightValue="11 Jul" reversed={true} /> {/* TODO: Add prop to make date customizable. */}
-                <Text 
-                    variant="heading" 
+                <Chip
+                    value="placed"
+                    highlightValue={createdAt}
+                    reversed={true}
+                />
+                <Text
+                    variant="heading"
                     className={cn(
                         "w-full overflow-hidden text-ellipsis whitespace-nowrap inline",
                         responsive && "2lg:hidden"
@@ -65,7 +75,7 @@ const FeaturedBountyCard = ({ name, reward, tags, responsive = true }: FeaturedC
                 <Text
                     variant="label"
                     className={cn(
-                        'text-secondary inline w-fit',
+                        'inline w-fit text-secondary',
                         responsive && '2lg:hidden',
                     )}
                 >
