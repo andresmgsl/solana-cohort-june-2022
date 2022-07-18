@@ -1,9 +1,60 @@
 import { Bounty } from 'types/bounty';
 
 export const mockBounties: Bounty[] = [
-    { name: 'Bounty A', prize: 10_000_000, thumbnail: '/dummyImg.png' },
-    { name: 'Bounty B', prize: 9_000_000, thumbnail: '/dummyImg.png' },
-    { name: 'Bounty C', prize: 8_000_000, thumbnail: '/dummyImg.png' },
-    { name: 'Bounty D', prize: 7_000_000, thumbnail: '/dummyImg.png' },
-    { name: 'Bounty E', prize: 6_000_000, thumbnail: '/dummyImg.png' },
+    {
+        createdAt: '01 Jan',
+        name: 'Really long bounty name',
+        reward: 300,
+        tags: [
+            { value: 'landing-page' },
+            { value: 'enhancement' },
+            { value: 'explorer-page' },
+            { value: 'bug' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+        ],
+    },
+    {
+        createdAt: '01 Jan',
+        name: 'Really long bounty name',
+        reward: 1_000_000,
+        tags: [
+            { value: 'landing-page' },
+            { value: 'enhancement' },
+            { value: 'explorer-page' },
+            { value: 'bug' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+        ],
+    },
+    {
+        createdAt: '01 Jan',
+        name: 'Really long bounty name',
+        reward: 57,
+        tags: [
+            { value: 'landing-page' },
+            { value: 'enhancement' },
+            { value: 'explorer-page' },
+            { value: 'bug' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+        ],
+    },
+    {
+        createdAt: '01 Jan',
+        name: 'Really long bounty name',
+        reward: 300,
+        tags: [
+            { value: 'landing-page' },
+            { value: 'enhancement' },
+            { value: 'explorer-page' },
+            { value: 'bug' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+            { value: 'explorer-page' },
+        ],
+    },
 ];
