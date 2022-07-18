@@ -2,6 +2,7 @@ import { Bounty } from 'types/bounty';
 
 export const mockBounties: Bounty[] = [
     {
+        createdAt: '01 Jan',
         name: 'Really long bounty name',
         reward: 300,
         tags: [
@@ -15,6 +16,7 @@ export const mockBounties: Bounty[] = [
         ],
     },
     {
+        createdAt: '01 Jan',
         name: 'Really long bounty name',
         reward: 1_000_000,
         tags: [
@@ -28,6 +30,7 @@ export const mockBounties: Bounty[] = [
         ],
     },
     {
+        createdAt: '01 Jan',
         name: 'Really long bounty name',
         reward: 57,
         tags: [
@@ -41,6 +44,7 @@ export const mockBounties: Bounty[] = [
         ],
     },
     {
+        createdAt: '01 Jan',
         name: 'Really long bounty name',
         reward: 300,
         tags: [
