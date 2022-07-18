@@ -1,4 +1,5 @@
 import { Bounty } from 'types/bounty';
+import { format } from 'date-fns';
 
 // Concatenates classes into a single className string
 const cn = (...args: string[]) => args.join(' ');
@@ -16,6 +17,8 @@ const filterBounties = ({ name }: Bounty, rawQuery: string) => {
     return unformat(name).includes(query);
 };
 
+const formatDate = (date: string) => format(new Date(date), 'dd MMM');
+
 /**
  * Formats number as currency string.
  *
@@ -24,4 +27,4 @@ const filterBounties = ({ name }: Bounty, rawQuery: string) => {
 const numberToCurrencyString = (number: number) =>
     number.toLocaleString('en-US');
 
-export { cn, filterBounties, numberToCurrencyString };
+export { cn, filterBounties, formatDate, numberToCurrencyString };
