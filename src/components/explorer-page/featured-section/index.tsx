@@ -1,5 +1,6 @@
 import FeaturedBountyCard from '../bounty-card';
 import Text from 'components/common/text';
+import { mockBounties } from 'mocks/bounties';
 
 const FeaturedSection = () => (
     <section
@@ -9,32 +10,13 @@ const FeaturedSection = () => (
         <Text variant="label">Featured</Text>
         <Text variant="big-heading">Popular Bounties</Text>
         <div className="flex w-full flex-row justify-start gap-5 overflow-x-auto scroll-smooth">
-            <FeaturedBountyCard
-                name="Really long bounty name"
-                reward={300}
-                tags={[
-                    { value: 'landing-page' },
-                    { value: 'enhancement' },
-                    { value: 'explorer-page' },
-                    { value: 'bug' },
-                    { value: 'explorer-page' },
-                    { value: 'explorer-page' },
-                    { value: 'explorer-page' },
-                ]}
-                responsive={false}
-            />
-
-            <FeaturedBountyCard
-                name="Really long bounty name"
-                reward={10_000_000}
-                tags={[
-                    { value: 'landing-page' },
-                    { value: 'bug' },
-                    { value: 'explorer-page' },
-                    { value: 'enhancement' },
-                ]}
-                responsive={false}
-            />
+            {mockBounties.map((bounty, index) => (
+                <FeaturedBountyCard
+                    key={index}
+                    responsive={false}
+                    {...bounty}
+                />
+            ))}
         </div>
     </section>
 );
