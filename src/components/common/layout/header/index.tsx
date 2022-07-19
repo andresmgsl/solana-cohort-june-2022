@@ -3,6 +3,7 @@ import Button from 'components/common/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import SearchBar from 'components/common/search-bar';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 const Header = () => (
     <header className="sticky top-0 z-50 flex h-20 w-full flex-row items-center justify-between bg-black/25 px-6 backdrop-blur-xl backdrop-filter">
@@ -29,6 +30,7 @@ const Header = () => (
             <div className="hidden flex-row gap-3 md:flex">
                 <Button text="Log in" variant="transparent" />
                 <Button text="Sign up" variant="orange" />
+                <WalletMultiButton className="btn mr-4 text-gray-300" />
             </div>
         </div>
 
