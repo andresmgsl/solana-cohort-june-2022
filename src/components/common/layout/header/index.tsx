@@ -6,9 +6,11 @@ import NavElement from './nav-element';
 import SearchBar from 'components/common/search-bar';
 import Text from 'components/common/text';
 import { supabaseClient } from '@supabase/auth-helpers-nextjs';
+import { useRouter } from 'next/router';
 import { useUser } from '@supabase/auth-helpers-react';
 
 const Header = () => {
+    const router = useRouter();
     const { user } = useUser();
 
     const signIn = async () => {
@@ -17,6 +19,7 @@ const Header = () => {
 
     const signOut = async () => {
         await supabaseClient.auth.signOut();
+        await router.push('/');
     };
 
     return (
