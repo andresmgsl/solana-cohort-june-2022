@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .card-shadow {
-        /* Trapezium shape. */
-        clip-path: polygon(0% 0%, 5% 100%, 95% 100%, 100% 0px);
+._image-container {
+    position: relative;
+
+    & > span {
+        position: static !important;
+        height: 100% !important;
     }
+}
+
+._image {
+    object-fit: contain;
+    width: 100% !important;
+    position: static !important;
+    height: unset !important;
 }
