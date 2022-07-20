@@ -53,6 +53,7 @@ export const getServerSideProps: GetServerSideProps = withPageAuth({
         return {
             props: {
                 authenticatedUser: {
+                    avatarUrl: userMetadata.avatar_url,
                     fullName: userMetadata.full_name,
                     username: userMetadata.user_name,
                 },
