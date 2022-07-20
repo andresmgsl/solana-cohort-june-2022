@@ -26,7 +26,7 @@ const variants = {
     'big-heading': 'text-4xl font-medium md:text-6xl',
     heading: 'text-3xl font-medium',
     'sub-heading': 'text-2xl font-medium',
-    'nav-heading': 'text-xl font-medium',
+    'nav-heading': 'text-lg font-medium sm:text-xl',
     paragraph: 'text-lg',
     input: 'text-sm uppercase tracking-wide',
     label: 'text-xs uppercase',
