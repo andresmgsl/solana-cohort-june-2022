@@ -60,7 +60,7 @@ const FeaturedBountyCard = ({
                 </Text>
             </div>
         </div>
-        <div className="flex w-full flex-row items-center gap-5">
+        <div className="flex w-full flex-row items-start gap-5 2lg:items-center">
             <div className="flex h-full w-40 flex-col gap-1 overflow-hidden">
                 <Text
                     variant="label"
