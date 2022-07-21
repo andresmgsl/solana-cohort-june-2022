@@ -21,7 +21,6 @@ export const ContextProvider: FC = ({ children }) => {
 
     const wallets = useMemo(
         () => [
-
             new PhantomWalletAdapter(),
             new GlowWalletAdapter(),
             new SlopeWalletAdapter(),
