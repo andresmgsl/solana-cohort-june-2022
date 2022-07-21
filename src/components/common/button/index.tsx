@@ -41,7 +41,7 @@ const Button = ({
     <button
         className={cn(
             variants[variant],
-            'flex items-center justify-center gap-3 w-fit h-fit max-h-full rounded-full border transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:!text-black active:translate-y-[0.05rem] active:scale-95',
+            'flex items-center justify-center gap-3 w-fit h-fit max-h-full whitespace-nowrap rounded-full border transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:!text-black active:translate-y-[0.05rem] active:scale-95',
             value || (React.Children.count(children) > 1) ? 'px-5 py-3' : 'p-3 aspect-square',
             reversed && 'flex-row-reverse',
             className
