@@ -1,5 +1,6 @@
 import { cn, numberToCurrencyString } from 'utils';
 
+import { Bounty } from 'types/bounty';
 import Card from 'components/common/card';
 import Chip from 'components/common/chip';
 import Text from 'components/common/text';
@@ -9,18 +10,17 @@ const max = 5;
 /**
  * Properties for a "Featured Bounty" card component.
  */
-type FeaturedCardProps = {
-    name: string;
-    reward: number;
+type FeaturedCardProps = Omit<Bounty, 'tags'> & {
+    responsive?: boolean;
     tags: Array<{
         highlightValue?: string;
         value?: string;
         reversed?: boolean;
     }>;
-    responsive?: boolean;
 };
 
 const FeaturedBountyCard = ({
+    createdAt,
     name,
     reward,
     tags,
@@ -35,8 +35,11 @@ const FeaturedBountyCard = ({
         <div className="flex w-full max-w-full flex-row items-center gap-3">
             <div className="aspect-square h-16 w-16 rounded-lg bg-white" />
             <div className="flex flex-col overflow-hidden">
-                <Chip value="placed" highlightValue="11 Jul" reversed={true} />{' '}
-                {/* TODO: Add prop to make date customizable. */}
+                <Chip
+                    value="placed"
+                    highlightValue={createdAt}
+                    reversed={true}
+                />
                 <Text
                     variant="heading"
                     className={cn(
@@ -79,7 +82,7 @@ const FeaturedBountyCard = ({
                 <Text
                     variant="label"
                     className={cn(
-                        'text-secondary inline w-fit',
+                        'inline w-fit text-secondary',
                         responsive && '2lg:hidden',
                     )}
                 >
