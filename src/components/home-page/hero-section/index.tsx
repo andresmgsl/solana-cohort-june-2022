@@ -23,7 +23,7 @@ const HeroSection = () => {
         <section
             title="hero"
             className={cn(
-                'relative flex h-[calc(100vh_-_5rem)] w-full flex-col items-center justify-center bg-black md:mt-0 md:flex-row md:justify-start',
+                'relative flex h-[calc(100vh_-_5rem)] w-full flex-col items-center justify-center overflow-hidden bg-black md:mt-0 md:flex-row md:justify-start',
             )}
             onMouseMove={ev => handleMouseMove(ev)}
         >
