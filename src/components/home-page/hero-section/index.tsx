@@ -43,9 +43,9 @@ const HeroSection = () => {
                     Do you have what it takes?
                 </h1>
                 <Headline />
-                <div className="flex gap-4">
-                    <Button text="Fund Bounty" variant="orange" />
-                    <Button text="Start Exploring" variant="transparent" />
+                <div className="flex gap-4 w-full">
+                    <Button text="Fund Bounty" variant="orange" className="!w-full sm:!w-fit" />
+                    <Button text="Start Exploring" variant="transparent" className="!w-full sm:!w-fit" />
                 </div>
             </div>
         </section>
