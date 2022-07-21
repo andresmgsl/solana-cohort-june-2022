@@ -1,11 +1,17 @@
-import Card from "components/common/card";
+import Button from "../button";
 import Chip from "components/common/chip";
+import Text from "../text";
+
+import { MdOutlineSearch } from "react-icons/md";
 
 const SearchBar = () => (
-    <Card className="flex flex-row gap-5 w-fit max-h-full px-5 py-3 !rounded-full cursor-pointer">
-        <p className="text-white/50 text-sm uppercase tracking-wide"> Search </p>
-        <Chip value="CTRL + K" />
-    </Card>
+    <Button variant="transparent">
+        <MdOutlineSearch className="h-4 aspect-square" />
+        {/* <Text variant="label" className="text-secondary"> Search </Text> */}
+        <div> {/* className="hidden lg:flex" */}
+            <Chip value="CTRL + K" />
+        </div>
+    </Button>
 );
 
 export default SearchBar;
