@@ -1,5 +1,6 @@
 import StatItem from 'components/common/stat-item';
-let StatItems = [
+
+const Stats = [
     {
         bountyName: 'Bounties1',
         bountyNumber: '135',
@@ -29,12 +30,13 @@ let StatItems = [
         removeBorderRightMedium: 'false',
     },
 ];
+
 const StatsSection = () => (
     <section
         title="faq"
         className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
     >
-        {StatItems.map(
+        {Stats.map(
             ({
                 bountyName,
                 bountyNumber,

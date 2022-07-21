@@ -1,5 +1,8 @@
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import Text from '../text';
+import { cn } from 'utils';
+
 const StatItem = StatProps => (
     <div
         className={`bg-primary  ${
@@ -15,10 +18,10 @@ const StatItem = StatProps => (
                 md:border-b-0
                 md:py-0 md:pl-0`}
     >
-        <span className="text-[21px] font-light  md:pr-6">
+        <Text variant="label" className="md:pr-6">
             {StatProps.bountyName}
-        </span>
-        <span className="text-[45px] font-medium">
+        </Text>
+        <Text variant="heading">
             <CountUp end={StatProps.bountyNumber}>
                 {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
@@ -26,7 +29,7 @@ const StatItem = StatProps => (
                     </VisibilitySensor>
                 )}
             </CountUp>
-        </span>
+        </Text>
     </div>
 );
 
