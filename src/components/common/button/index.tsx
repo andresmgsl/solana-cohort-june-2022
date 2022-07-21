@@ -6,9 +6,11 @@ import { cn } from 'utils';
  * Properties for an interactable button component.
  */
 type ButtonProps = {
+    className?: string;
     type?: 'button' | 'submit' | 'reset';
     variant?: string;
     text?: string;
+    reversed?: boolean;
     children?: React.ReactNode;
 };
 
@@ -30,8 +32,10 @@ const variants = {
  */
 const Button = ({
     type = 'button',
-    variant = 'black',
+    variant = 'transparent',
+    reversed = false,
     text: value,
+    className,
     children
 }: ButtonProps) => (
     <button
@@ -39,6 +43,9 @@ const Button = ({
             variants[variant],
             'flex items-center justify-center gap-3 w-fit h-fit max-h-full rounded-full border transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:!text-black active:translate-y-[0.05rem] active:scale-95',
             value || (React.Children.count(children) > 1) ? 'px-5 py-3' : 'p-3 aspect-square',
+            reversed && 'flex-row-reverse',
+            className
+
         )}
         type={type}
     >
