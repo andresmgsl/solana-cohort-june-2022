@@ -5,6 +5,8 @@ import Headline from './component/Headline';
 import React from 'react';
 import { cn } from 'utils';
 
+const pageHeight = "calc(100vh_-_5rem)"; // TODO: Create variable for header height (`var(--header-height)`)
+
 const HeroSection = () => {
     const [MousePosition, setMousePosition] = React.useState({
         left: 0,
@@ -20,7 +22,7 @@ const HeroSection = () => {
         <section
             title="hero"
             className={cn(
-                'relative flex h-screen w-full flex-col items-center justify-center bg-black md:mt-0 md:flex-row md:justify-start',
+                'relative flex h-[calc(100vh_-_5rem)] w-full flex-col items-center justify-center bg-black md:mt-0 md:flex-row md:justify-start',
             )}
             onMouseMove={ev => handleMouseMove(ev)}
         >
@@ -31,7 +33,7 @@ const HeroSection = () => {
                 }}
             ></div>
             <div
-                className="absolute block h-full w-full sm:hidden"
+                className="absolute block h-[130%] aspect-square sm:hidden"
                 style={{
                     background: `radial-gradient(circle at center 30%, rgba(240, 117, 70, 0.765) 0%, rgba(203, 68, 184, 0) 40%, rgba(219, 65, 75, 0) 40%)`,
                 }}
