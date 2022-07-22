@@ -26,7 +26,7 @@ const NavElement = ({ label, href, as }:NavElementProps) => {
                     "group h-full flex flex-col justify-between"
                 )}
             >
-                <Text variant="nav-heading"> {label} </Text>
+                <Text variant="nav-heading capitalize"> {label} </Text>
                 
                 <div 
                     className={cn(

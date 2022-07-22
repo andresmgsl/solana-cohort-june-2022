@@ -3,7 +3,7 @@ import Image from 'components/common/image';
 import SearchBar from 'components/common/search-bar';
 import Link from 'next/link';
 
-import { MdFace, MdSearch } from 'react-icons/md';
+import { MdManageAccounts, MdOutlineManageAccounts, MdPerson, MdSearch} from 'react-icons/md';
 import NavElement from './nav-element';
 
 const Header = () => (
@@ -39,8 +39,8 @@ const Header = () => (
                 <div className="w-px h-1/2 bg-line" />
 
                 <div className="flex flex-row gap-3">
-                    <Button text="Sign up" variant="orange">
-                        <MdFace className="h-4 aspect-square" />
+                    <Button variant="orange">
+                        <MdManageAccounts className="h-4 aspect-square" />
                     </Button>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const Header = () => (
                     <MdSearch className="h-4 aspect-square" />
                 </Button>
                 <Button variant="orange">
-                    <MdFace className="h-4 aspect-square" />
+                    <MdManageAccounts className="h-4 aspect-square" />
                 </Button>
             </div>
         </div>
