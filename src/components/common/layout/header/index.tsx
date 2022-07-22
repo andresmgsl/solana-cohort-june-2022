@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Text from 'components/common/text';
 import Link from 'next/link';
 import SearchBar from 'components/common/search-bar';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import SideNavigation from './side-navigation';
 import { useState } from 'react';
 import { cn } from 'utils';
@@ -33,9 +34,10 @@ const Header = () => (
             <SearchBar />
 
             <div className="w-px h-8 bg-line" />
-
+                
             <div className="flex flex-row gap-3">
                 <Button text="Log in / Sign up" variant="orange" />
+                <WalletMultiButton className="btn mr-4 text-gray-300" />
             </div>
         </div>
 
