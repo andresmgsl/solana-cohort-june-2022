@@ -10,7 +10,7 @@ const BountyDetail: NextPage = () => {
     const { bounty } = router.query
 
     return (
-        <div className="flex flex-col gap-8 mt-8 text-white">
+        <div className="flex flex-col gap-8 mt-8 p-5 sm:p-8 md:px-16 lg:px-32 lg:py-16 xl:px-48 xl:py-20 text-white">
             <div className="flex flex-row justify-between">
                 <Button text="Back" variant="transparent" reversed={true}>
                     <MdChevronLeft className="h-4 aspect-square" />
