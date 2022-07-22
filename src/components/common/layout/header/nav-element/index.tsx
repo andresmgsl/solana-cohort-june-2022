@@ -23,15 +23,15 @@ const NavElement = ({ label, href, as }:NavElementProps) => {
         <Link href={href} as={as} passHref> 
             <a 
                 className={cn(
-                    "group h-full flex flex-col justify-between"
+                    "group h-full flex flex-col justify-between items-center"
                 )}
             >
-                <Text variant="nav-heading capitalize"> {label} </Text>
+                <Text variant="nav-heading"> {label} </Text>
                 
                 <div 
                     className={cn(
-                        "w-full transition-all",
-                        isActive ? "h-1 bg-primary" : "h-px group-hover:bg-primary-focus"
+                        "w-1/4 h-1 transition-all duration-300 ease-out",
+                        isActive ? "!w-full bg-primary" : "group-hover:bg-primary-focus group-hover:w-1/2"
                     )} 
                 />
             </a>
