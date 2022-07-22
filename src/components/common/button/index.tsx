@@ -21,6 +21,7 @@ const variants = {
     black: 'border-transparent bg-black text-white',
     orange: 'border-transparent bg-primary text-black', // TODO: Change name of variant to `highlight`.
     transparent: 'text-white', // TODO: Change name of variant to `outlined`.
+    label: 'text-secondary hover:text-white !p-0 border-none',
 };
 
 /**
@@ -41,7 +42,8 @@ const Button = ({
     <button
         className={cn(
             variants[variant],
-            'flex items-center justify-center gap-3 w-fit h-fit max-h-full whitespace-nowrap rounded-full border transition-all hover:-translate-y-[0.2rem] hover:bg-white hover:!text-black active:translate-y-[0.05rem] active:scale-95',
+            'flex items-center justify-center gap-3 w-fit h-fit max-h-full whitespace-nowrap rounded-full border transition-all',
+            variant !== 'label' && 'hover:-translate-y-[0.2rem] hover:bg-white hover:!text-black active:translate-y-[0.05rem] active:scale-95',
             value || (React.Children.count(children) > 1) ? 'px-5 py-3' : 'p-3 aspect-square',
             reversed && 'flex-row-reverse',
             className
@@ -49,7 +51,7 @@ const Button = ({
         )}
         type={type}
     >
-        {value && <Text variant="input">{value}</Text>}
+        {value && <Text variant={variant === "label" ? "label" : "input"}>{value}</Text>}
         {children}
     </button>
 );

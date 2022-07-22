@@ -19,8 +19,8 @@ const BountyDetail: NextPage = () => {
 
     return (
         <div className="mt-8 flex flex-col gap-8 p-5 text-white sm:p-8 md:px-16 lg:px-32 lg:py-16 xl:px-48 xl:py-20">
-            <div className="flex flex-row justify-between">
-                <Button text="Back" variant="transparent" reversed={true}>
+            <div className="flex flex-row justify-between items-center">
+                <Button text="Back" variant="label" reversed={true}>
                     <MdChevronLeft className="aspect-square h-4" />
                 </Button>
 
