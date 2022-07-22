@@ -8,8 +8,8 @@ import NavElement from './nav-element';
 
 const Header = () => (
     <header className="sticky top-0 z-50 flex h-20 w-full flex-row items-center justify-between bg-black/25 px-6 backdrop-blur-xl backdrop-filter border-b-1.5 border-b-line">
-        <Link href="./">
-            <div className="flex flex-row items-center gap-3 w-fit">
+        <Link href="./" passHref>
+            <div className="flex flex-row items-center gap-3 w-fit cursor-pointer">
                 <Image
                     src="/logo-icon.svg"
                     alt="solana icon"
