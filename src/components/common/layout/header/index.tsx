@@ -26,17 +26,17 @@ const Header = () => (
             </div>
         </Link>
         <div className="h-full flex flex-row items-center gap-5 text-white">
-            <div className="flex flex-row gap-5 sm:gap-7">
-                <NavElement label="home" href="/" />
-                <NavElement label="explorer" href="/explorer" />
+            <div className="h-2/3 self-end flex flex-row gap-5 sm:gap-7">
+                <NavElement label="Home" href="/" />
+                <NavElement label="Explorer" href="/explorer" />
             </div> 
 
-            <div className="w-px h-8 bg-line" />
+            <div className="w-px h-1/2 bg-line" />
 
-            <div className="hidden flex-row items-center gap-5 md:flex">
+            <div className="h-full hidden flex-row items-center gap-5 md:flex">
                 <SearchBar />
 
-                <div className="w-px h-8 bg-line" />
+                <div className="w-px h-1/2 bg-line" />
 
                 <div className="flex flex-row gap-3">
                     <Button text="Sign up" variant="orange">
