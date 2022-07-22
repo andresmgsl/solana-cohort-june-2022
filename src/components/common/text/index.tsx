@@ -28,7 +28,7 @@ const variants = {
     'sub-heading': 'text-2xl font-medium',
     'nav-heading': 'text-lg font-medium sm:text-xl',
     paragraph: 'text-lg',
-    input: 'uppercase tracking-wide sm:text-sm',
+    input: 'text-sm uppercase tracking-wide',
     label: 'text-sm uppercase tracking-wide sm:text-xs',
 };
 
