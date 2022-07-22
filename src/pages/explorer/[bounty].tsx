@@ -9,11 +9,12 @@ import { MdChevronLeft, MdLink } from 'react-icons/md';
 const BountyDetail: NextPage = () => {
     const router = useRouter();
     const { bounty } = router.query;
-    const currentTab = router.query.tab as string;
+    const currentTab = router.query.tab as string || "about";
 
     const tabs = [
-        {id: 'about', section: <AboutSection />, label: 'About'},
-        {id: 'fund', section: <FundSection />, label: 'F'},
+        {id: 'about', section: <AboutSection createdAt={''} name={''} reward={0} tags={[]} />, label: 'About'},
+        {id: 'details', section: <div></div>, label: 'Details'},
+        {id: 'fund', section: <div></div>, label: 'Fund'},
     ];
 
     return (
@@ -39,12 +40,12 @@ const BountyDetail: NextPage = () => {
                         key={tab.id}
                         label={tab.label}
                         href={`/explorer/${bounty}?tab=${tab.id}`}
-                        as={index === 0 && `/explorer/${tab.id}`}
+                        as={index === 0 && `/explorer/${bounty}`}
                     />
                 ))}
             </div>
 
-            {tabs.find(tab tab.id === currentTab).section}
+            {tabs.find(tab => tab.id === currentTab).section}
         </div>
     );
 };
